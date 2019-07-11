@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909422D707C0000E1A76 /* AppDelegate.swift */; };
+		9F63909722D707C0000E1A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909622D707C0000E1A76 /* ViewController.swift */; };
+		9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909822D707C0000E1A76 /* Main.storyboard */; };
+		9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909B22D707C2000E1A76 /* Assets.xcassets */; };
+		9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909D22D707C2000E1A76 /* LaunchScreen.storyboard */; };
+		9F6390AA22D707C2000E1A76 /* Nanopool_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390A922D707C2000E1A76 /* Nanopool_ClientTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F6390A622D707C2000E1A76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F63908922D707C0000E1A76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F63909022D707C0000E1A76;
+			remoteInfo = "Nanopool Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F63909122D707C0000E1A76 /* Nanopool Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nanopool Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F63909422D707C0000E1A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F63909622D707C0000E1A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F63909922D707C0000E1A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F63909B22D707C2000E1A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F63909E22D707C2000E1A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F6390A022D707C2000E1A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6390A522D707C2000E1A76 /* Nanopool ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nanopool ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6390A922D707C2000E1A76 /* Nanopool_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nanopool_ClientTests.swift; sourceTree = "<group>"; };
+		9F6390AB22D707C2000E1A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F63908E22D707C0000E1A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6390A222D707C2000E1A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F63908822D707C0000E1A76 = {
+			isa = PBXGroup;
+			children = (
+				9F63909322D707C0000E1A76 /* Nanopool Client */,
+				9F6390A822D707C2000E1A76 /* Nanopool ClientTests */,
+				9F63909222D707C0000E1A76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F63909222D707C0000E1A76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F63909122D707C0000E1A76 /* Nanopool Client.app */,
+				9F6390A522D707C2000E1A76 /* Nanopool ClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F63909322D707C0000E1A76 /* Nanopool Client */ = {
+			isa = PBXGroup;
+			children = (
+				9F63909422D707C0000E1A76 /* AppDelegate.swift */,
+				9F63909622D707C0000E1A76 /* ViewController.swift */,
+				9F63909822D707C0000E1A76 /* Main.storyboard */,
+				9F63909B22D707C2000E1A76 /* Assets.xcassets */,
+				9F63909D22D707C2000E1A76 /* LaunchScreen.storyboard */,
+				9F6390A022D707C2000E1A76 /* Info.plist */,
+			);
+			path = "Nanopool Client";
+			sourceTree = "<group>";
+		};
+		9F6390A822D707C2000E1A76 /* Nanopool ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F6390A922D707C2000E1A76 /* Nanopool_ClientTests.swift */,
+				9F6390AB22D707C2000E1A76 /* Info.plist */,
+			);
+			path = "Nanopool ClientTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F63909022D707C0000E1A76 /* Nanopool Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F6390AE22D707C2000E1A76 /* Build configuration list for PBXNativeTarget "Nanopool Client" */;
+			buildPhases = (
+				9F63908D22D707C0000E1A76 /* Sources */,
+				9F63908E22D707C0000E1A76 /* Frameworks */,
+				9F63908F22D707C0000E1A76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nanopool Client";
+			productName = "Nanopool Client";
+			productReference = 9F63909122D707C0000E1A76 /* Nanopool Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F6390A422D707C2000E1A76 /* Nanopool ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F6390B122D707C2000E1A76 /* Build configuration list for PBXNativeTarget "Nanopool ClientTests" */;
+			buildPhases = (
+				9F6390A122D707C2000E1A76 /* Sources */,
+				9F6390A222D707C2000E1A76 /* Frameworks */,
+				9F6390A322D707C2000E1A76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F6390A722D707C2000E1A76 /* PBXTargetDependency */,
+			);
+			name = "Nanopool ClientTests";
+			productName = "Nanopool ClientTests";
+			productReference = 9F6390A522D707C2000E1A76 /* Nanopool ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F63908922D707C0000E1A76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Florin Uscatu";
+				TargetAttributes = {
+					9F63909022D707C0000E1A76 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9F6390A422D707C2000E1A76 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9F63909022D707C0000E1A76;
+					};
+				};
+			};
+			buildConfigurationList = 9F63908C22D707C0000E1A76 /* Build configuration list for PBXProject "Nanopool Client" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F63908822D707C0000E1A76;
+			productRefGroup = 9F63909222D707C0000E1A76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F63909022D707C0000E1A76 /* Nanopool Client */,
+				9F6390A422D707C2000E1A76 /* Nanopool ClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F63908F22D707C0000E1A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */,
+				9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */,
+				9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6390A322D707C2000E1A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F63908D22D707C0000E1A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F63909722D707C0000E1A76 /* ViewController.swift in Sources */,
+				9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6390A122D707C2000E1A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6390AA22D707C2000E1A76 /* Nanopool_ClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F6390A722D707C2000E1A76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F63909022D707C0000E1A76 /* Nanopool Client */;
+			targetProxy = 9F6390A622D707C2000E1A76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F63909822D707C0000E1A76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F63909922D707C0000E1A76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F63909D22D707C2000E1A76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F63909E22D707C2000E1A76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F6390AC22D707C2000E1A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F6390AD22D707C2000E1A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F6390AF22D707C2000E1A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CEQW7LX82;
+				INFOPLIST_FILE = "Nanopool Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "approcket.Nanopool-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F6390B022D707C2000E1A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CEQW7LX82;
+				INFOPLIST_FILE = "Nanopool Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "approcket.Nanopool-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F6390B222D707C2000E1A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CEQW7LX82;
+				INFOPLIST_FILE = "Nanopool ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "approcket.Nanopool-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nanopool Client.app/Nanopool Client";
+			};
+			name = Debug;
+		};
+		9F6390B322D707C2000E1A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CEQW7LX82;
+				INFOPLIST_FILE = "Nanopool ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "approcket.Nanopool-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nanopool Client.app/Nanopool Client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F63908C22D707C0000E1A76 /* Build configuration list for PBXProject "Nanopool Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6390AC22D707C2000E1A76 /* Debug */,
+				9F6390AD22D707C2000E1A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F6390AE22D707C2000E1A76 /* Build configuration list for PBXNativeTarget "Nanopool Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6390AF22D707C2000E1A76 /* Debug */,
+				9F6390B022D707C2000E1A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F6390B122D707C2000E1A76 /* Build configuration list for PBXNativeTarget "Nanopool ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6390B222D707C2000E1A76 /* Debug */,
+				9F6390B322D707C2000E1A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F63908922D707C0000E1A76 /* Project object */;
+}
