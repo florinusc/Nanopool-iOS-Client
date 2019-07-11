@@ -77,12 +77,13 @@
 		9F63909322D707C0000E1A76 /* Nanopool Client */ = {
 			isa = PBXGroup;
 			children = (
-				9F63909422D707C0000E1A76 /* AppDelegate.swift */,
-				9F63909622D707C0000E1A76 /* ViewController.swift */,
-				9F63909822D707C0000E1A76 /* Main.storyboard */,
-				9F63909B22D707C2000E1A76 /* Assets.xcassets */,
-				9F63909D22D707C2000E1A76 /* LaunchScreen.storyboard */,
-				9F6390A022D707C2000E1A76 /* Info.plist */,
+				9F6390BB22D70891000E1A76 /* Helpers */,
+				9F6390B922D70875000E1A76 /* Resources */,
+				9F6390B822D7086D000E1A76 /* Cells */,
+				9F6390B722D70863000E1A76 /* Models */,
+				9F6390B622D70859000E1A76 /* ViewModels */,
+				9F6390B522D70852000E1A76 /* ViewControllers */,
+				9F6390B422D7083E000E1A76 /* Project FIles */,
 			);
 			path = "Nanopool Client";
 			sourceTree = "<group>";
@@ -94,6 +95,77 @@
 				9F6390AB22D707C2000E1A76 /* Info.plist */,
 			);
 			path = "Nanopool ClientTests";
+			sourceTree = "<group>";
+		};
+		9F6390B422D7083E000E1A76 /* Project FIles */ = {
+			isa = PBXGroup;
+			children = (
+				9F63909422D707C0000E1A76 /* AppDelegate.swift */,
+				9F6390A022D707C2000E1A76 /* Info.plist */,
+			);
+			path = "Project FIles";
+			sourceTree = "<group>";
+		};
+		9F6390B522D70852000E1A76 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F63909622D707C0000E1A76 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F6390B622D70859000E1A76 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9F6390B722D70863000E1A76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F6390B822D7086D000E1A76 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9F6390B922D70875000E1A76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F6390BA22D70880000E1A76 /* Storyboards */,
+				9F63909B22D707C2000E1A76 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F6390BA22D70880000E1A76 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F63909822D707C0000E1A76 /* Main.storyboard */,
+				9F63909D22D707C2000E1A76 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9F6390BB22D70891000E1A76 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F6390BC22D70898000E1A76 /* Protocols */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F6390BC22D70898000E1A76 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
