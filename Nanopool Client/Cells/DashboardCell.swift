@@ -28,11 +28,6 @@ class DashboardCell: UITableViewCell {
         hashrateLabel.text = viewModel.hashrateString
         minerCountLabel.text = viewModel.minerCountString
         priceLabel.text = viewModel.priceString
-        if let logoImage = UIImage(named: viewModel.coinLogoImageName) {
-            logoImageView.image = logoImage
-        } else {
-            logoImageView.image = nil
-        }
+        logoImageView.image = UIImage(named: viewModel.coinLogoImageName)
     }
-    
 }
