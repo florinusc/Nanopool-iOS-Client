@@ -24,6 +24,8 @@
 		9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390CF22D9F00E000E1A76 /* ReusableView.swift */; };
 		9F6390D222D9F020000E1A76 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */; };
 		9F6390D422D9F02C000E1A76 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */; };
+		9F6390D622D9F731000E1A76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D522D9F731000E1A76 /* Constants.swift */; };
+		9F6390D822D9F765000E1A76 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D722D9F765000E1A76 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		9F6390CF22D9F00E000E1A76 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		9F6390D522D9F731000E1A76 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9F6390D722D9F765000E1A76 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 			children = (
 				9F6390CC22D9EFDF000E1A76 /* Extensions */,
 				9F6390BC22D70898000E1A76 /* Protocols */,
+				9F6390D522D9F731000E1A76 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			children = (
 				9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */,
 				9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */,
+				9F6390D722D9F765000E1A76 /* UIFont+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -326,7 +332,9 @@
 				9F6390CA22D9EFCA000E1A76 /* DashboardTableViewCell.swift in Sources */,
 				9F6390CE22D9EFF8000E1A76 /* NibLoadableView.swift in Sources */,
 				9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */,
+				9F6390D622D9F731000E1A76 /* Constants.swift in Sources */,
 				9F6390D422D9F02C000E1A76 /* UITableViewCell+Extension.swift in Sources */,
+				9F6390D822D9F765000E1A76 /* UIFont+Extension.swift in Sources */,
 				9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */,
 				9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */,
 				9F6390C022D9E48B000E1A76 /* ViewModelBased.swift in Sources */,
