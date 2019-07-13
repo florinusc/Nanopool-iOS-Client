@@ -25,16 +25,20 @@ class DashboardViewController: UIViewController, ViewModelBased {
     // MARK: - Setup
     private func setup() {
         tableView.tableFooterView = UIView()
+        tableView.register(DashboardTableViewCell.self)
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableView.automaticDimension
     }
 }
 
 extension DashboardViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell: DashboardTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        return cell
     }
 }
 
