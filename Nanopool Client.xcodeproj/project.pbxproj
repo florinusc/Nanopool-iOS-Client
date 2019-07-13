@@ -103,10 +103,12 @@
 		9F63909322D707C0000E1A76 /* Nanopool Client */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390B722D70863000E1A76 /* Models */,
+				9F6390DA22D9F8F8000E1A76 /* Network */,
+				9F6390D922D9F8F2000E1A76 /* Data */,
 				9F6390BB22D70891000E1A76 /* Helpers */,
 				9F6390B922D70875000E1A76 /* Resources */,
 				9F6390B822D7086D000E1A76 /* Cells */,
-				9F6390B722D70863000E1A76 /* Models */,
 				9F6390B622D70859000E1A76 /* ViewModels */,
 				9F6390B522D70852000E1A76 /* ViewControllers */,
 				9F6390B422D7083E000E1A76 /* Project FIles */,
@@ -221,6 +223,20 @@
 				9F6390D722D9F765000E1A76 /* UIFont+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F6390D922D9F8F2000E1A76 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9F6390DA22D9F8F8000E1A76 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

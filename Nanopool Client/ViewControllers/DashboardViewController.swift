@@ -41,6 +41,7 @@ class DashboardViewController: UIViewController, ViewModelBased {
         addHeaderToTableView()
     }
     
+    // MARK: - Private helpers
     private func addHeaderToTableView() {
         let view = UIView(frame: headerFrame)
         let label = UILabel(frame: view.frame)
