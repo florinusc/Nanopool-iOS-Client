@@ -31,6 +31,7 @@
 		9F6390E122D9FD0E000E1A76 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E022D9FD0E000E1A76 /* MockRepository.swift */; };
 		9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E222D9FD59000E1A76 /* CustomError.swift */; };
 		9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */; };
+		9F6390E822DA1CA2000E1A76 /* Coins.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6390E722DA1CA2000E1A76 /* Coins.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		9F6390E022D9FD0E000E1A76 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
 		9F6390E222D9FD59000E1A76 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellViewModel.swift; sourceTree = "<group>"; };
+		9F6390E722DA1CA2000E1A76 /* Coins.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Coins.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			children = (
 				9F6390BA22D70880000E1A76 /* Storyboards */,
 				9F63909B22D707C2000E1A76 /* Assets.xcassets */,
+				9F6390E722DA1CA2000E1A76 /* Coins.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */,
 				9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */,
 				9F6390CB22D9EFCA000E1A76 /* DashboardCell.xib in Resources */,
+				9F6390E822DA1CA2000E1A76 /* Coins.plist in Resources */,
 				9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

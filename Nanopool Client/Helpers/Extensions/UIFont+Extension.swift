@@ -9,5 +9,5 @@
 import UIKit
 
 extension UIFont {
-    static let dashboardHeaderFont = UIFont(name: "AvenirNext-Bold", size: 34.0)
+    static let dashboardHeaderFont = UIFont(name: "AvenirNext-Bold", size: 30.0)
 }

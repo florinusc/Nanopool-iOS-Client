@@ -12,10 +12,10 @@ class DashboardViewModel: ViewModel {
     
     // MARK: - Private constants
     private let repository: Repository!
-    private let coins = ["eth", "xmr", "etc", "zec", "rvn", "pasc", "etn", "grin"]
     
     // MARK: - Private variables
     private var poolInformationArray = [PoolInformation]()
+    private var coins = [String]()
     
     // MARK: - Public variables
     var numberOfCoins: Int {
@@ -25,9 +25,18 @@ class DashboardViewModel: ViewModel {
     // MARK: Init
     init(repository: Repository) {
         self.repository = repository
+        retrieveCoinList()
     }
     
     // MARK: - Private helpers
+    private func retrieveCoinList() {
+        var nsDictionary: NSDictionary?
+        if let path = Bundle.main.path(forResource: "Coins", ofType: "plist") {
+            nsDictionary = NSDictionary(contentsOfFile: path)
+        }
+        coins = nsDictionary?.allKeys as? [String] ?? []
+    }
+    
     private func getPoolInformation(for coin: String, completion block: @escaping (Error?) -> Void) {
         repository.getPoolInformation(for: coin) { [weak self] (result) in
             guard let self = self else { return }
@@ -56,7 +65,7 @@ class DashboardViewModel: ViewModel {
     
     func dashboardCellViewModel(at indexPath: IndexPath) -> DashboardCellViewModel? {
         guard indexPath.row < numberOfCoins else { return nil }
-        return DashboardCellViewModel.from(poolInformationArray[indexPath.row])
+        return DashboardCellViewModel(poolInformation: poolInformationArray[indexPath.row])
     }
     
 }

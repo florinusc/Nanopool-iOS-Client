@@ -14,10 +14,13 @@ class DashboardViewController: UIViewController, ViewModelBased {
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Private constants
-    private var headerFrame: CGRect {
-        return CGRect(x: 20.0, y: 0, width: view.frame.width, height: 70.0)
-    }
+    private let headerHeight: CGFloat = 70.0
     private let estimatedRowHeight: CGFloat = 200.0
+    
+    // MARK: - Private variables
+    private var headerFrame: CGRect {
+        return CGRect(x: 20.0, y: 0, width: view.frame.width, height: headerHeight)
+    }
     
     // MARK: - Public variables
     var viewModel: DashboardViewModel!
@@ -54,6 +57,7 @@ class DashboardViewController: UIViewController, ViewModelBased {
         label.font = UIFont.dashboardHeaderFont
         label.textColor = .white
         tableView.tableHeaderView = view
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: headerHeight, right: 0)
     }
     
     private func getInformation() {
