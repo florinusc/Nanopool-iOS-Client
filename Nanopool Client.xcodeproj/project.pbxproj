@@ -18,14 +18,19 @@
 		9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */; };
 		9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */; };
 		9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C622D9E563000E1A76 /* TabBarViewController.swift */; };
-		9F6390CA22D9EFCA000E1A76 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C822D9EFCA000E1A76 /* DashboardTableViewCell.swift */; };
-		9F6390CB22D9EFCA000E1A76 /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6390C922D9EFCA000E1A76 /* DashboardTableViewCell.xib */; };
+		9F6390CA22D9EFCA000E1A76 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C822D9EFCA000E1A76 /* DashboardCell.swift */; };
+		9F6390CB22D9EFCA000E1A76 /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6390C922D9EFCA000E1A76 /* DashboardCell.xib */; };
 		9F6390CE22D9EFF8000E1A76 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390CD22D9EFF8000E1A76 /* NibLoadableView.swift */; };
 		9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390CF22D9F00E000E1A76 /* ReusableView.swift */; };
 		9F6390D222D9F020000E1A76 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */; };
 		9F6390D422D9F02C000E1A76 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */; };
 		9F6390D622D9F731000E1A76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D522D9F731000E1A76 /* Constants.swift */; };
 		9F6390D822D9F765000E1A76 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D722D9F765000E1A76 /* UIFont+Extension.swift */; };
+		9F6390DD22D9FC44000E1A76 /* PoolInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390DC22D9FC44000E1A76 /* PoolInformation.swift */; };
+		9F6390DF22D9FC73000E1A76 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390DE22D9FC73000E1A76 /* Repository.swift */; };
+		9F6390E122D9FD0E000E1A76 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E022D9FD0E000E1A76 /* MockRepository.swift */; };
+		9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E222D9FD59000E1A76 /* CustomError.swift */; };
+		9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,14 +59,19 @@
 		9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		9F6390C622D9E563000E1A76 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		9F6390C822D9EFCA000E1A76 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
-		9F6390C922D9EFCA000E1A76 /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
+		9F6390C822D9EFCA000E1A76 /* DashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
+		9F6390C922D9EFCA000E1A76 /* DashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
 		9F6390CD22D9EFF8000E1A76 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		9F6390CF22D9F00E000E1A76 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		9F6390D522D9F731000E1A76 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9F6390D722D9F765000E1A76 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		9F6390DC22D9FC44000E1A76 /* PoolInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolInformation.swift; sourceTree = "<group>"; };
+		9F6390DE22D9FC73000E1A76 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		9F6390E022D9FD0E000E1A76 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
+		9F6390E222D9FD59000E1A76 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +156,7 @@
 		9F6390B622D70859000E1A76 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390E422DA01B7000E1A76 /* Cells */,
 				9F6390C522D9E543000E1A76 /* ViewControllers */,
 			);
 			path = ViewModels;
@@ -154,6 +165,7 @@
 		9F6390B722D70863000E1A76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390DC22D9FC44000E1A76 /* PoolInformation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,8 +173,8 @@
 		9F6390B822D7086D000E1A76 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				9F6390C822D9EFCA000E1A76 /* DashboardTableViewCell.swift */,
-				9F6390C922D9EFCA000E1A76 /* DashboardTableViewCell.xib */,
+				9F6390C822D9EFCA000E1A76 /* DashboardCell.swift */,
+				9F6390C922D9EFCA000E1A76 /* DashboardCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -191,6 +203,7 @@
 				9F6390CC22D9EFDF000E1A76 /* Extensions */,
 				9F6390BC22D70898000E1A76 /* Protocols */,
 				9F6390D522D9F731000E1A76 /* Constants.swift */,
+				9F6390E222D9FD59000E1A76 /* CustomError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -228,6 +241,8 @@
 		9F6390D922D9F8F2000E1A76 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390DE22D9FC73000E1A76 /* Repository.swift */,
+				9F6390E022D9FD0E000E1A76 /* MockRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -237,6 +252,14 @@
 			children = (
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		9F6390E422DA01B7000E1A76 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +345,7 @@
 			files = (
 				9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */,
 				9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */,
-				9F6390CB22D9EFCA000E1A76 /* DashboardTableViewCell.xib in Resources */,
+				9F6390CB22D9EFCA000E1A76 /* DashboardCell.xib in Resources */,
 				9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,15 +368,20 @@
 				9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */,
 				9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */,
 				9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */,
-				9F6390CA22D9EFCA000E1A76 /* DashboardTableViewCell.swift in Sources */,
+				9F6390CA22D9EFCA000E1A76 /* DashboardCell.swift in Sources */,
+				9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */,
 				9F6390CE22D9EFF8000E1A76 /* NibLoadableView.swift in Sources */,
 				9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */,
+				9F6390DD22D9FC44000E1A76 /* PoolInformation.swift in Sources */,
 				9F6390D622D9F731000E1A76 /* Constants.swift in Sources */,
 				9F6390D422D9F02C000E1A76 /* UITableViewCell+Extension.swift in Sources */,
+				9F6390E122D9FD0E000E1A76 /* MockRepository.swift in Sources */,
 				9F6390D822D9F765000E1A76 /* UIFont+Extension.swift in Sources */,
+				9F6390DF22D9FC73000E1A76 /* Repository.swift in Sources */,
 				9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */,
 				9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */,
 				9F6390C022D9E48B000E1A76 /* ViewModelBased.swift in Sources */,
+				9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */,
 				9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

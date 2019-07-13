@@ -10,6 +10,9 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
+    // MARK: - Private constants
+    private let repository = MockRepository()
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +21,7 @@ class TabBarViewController: UITabBarController {
     
     // MARK: - Setup
     private func setup() {
-        let dashboardViewController = DashboardViewController.instantiate(with: DashboardViewModel())
+        let dashboardViewController = DashboardViewController.instantiate(with: DashboardViewModel(repository: repository))
         dashboardViewController.tabBarItem = UITabBarItem(title: "Dashboard", image: UIImage(named: "dashboard"), tag: 0)
         viewControllers = [dashboardViewController]
     }

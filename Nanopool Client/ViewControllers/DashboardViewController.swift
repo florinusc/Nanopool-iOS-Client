@@ -30,12 +30,13 @@ class DashboardViewController: UIViewController, ViewModelBased {
     
     // MARK: - Setup
     private func setup() {
+        getInformation()
         setupTableView()
     }
     
     private func setupTableView() {
         tableView.tableFooterView = UIView()
-        tableView.register(DashboardTableViewCell.self)
+        tableView.register(DashboardCell.self)
         tableView.estimatedRowHeight = estimatedRowHeight
         tableView.rowHeight = UITableView.automaticDimension
         addHeaderToTableView()
@@ -54,15 +55,29 @@ class DashboardViewController: UIViewController, ViewModelBased {
         label.textColor = .white
         tableView.tableHeaderView = view
     }
+    
+    private func getInformation() {
+        viewModel.getPoolInformation { [weak self] (errors) in
+            guard let self = self else { return }
+            if !errors.isEmpty {
+                // TODO: - present alert for errors
+                return
+            }
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension DashboardViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfCoins
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: DashboardTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        let cell: DashboardCell = tableView.dequeueReusableCell(for: indexPath)
+        if let cellViewModel = viewModel.dashboardCellViewModel(at: indexPath) {
+            cell.viewModel = cellViewModel
+        }
         return cell
     }
 }
