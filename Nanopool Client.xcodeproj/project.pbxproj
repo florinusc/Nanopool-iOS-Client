@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909422D707C0000E1A76 /* AppDelegate.swift */; };
-		9F63909722D707C0000E1A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909622D707C0000E1A76 /* ViewController.swift */; };
+		9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909622D707C0000E1A76 /* DashboardViewController.swift */; };
 		9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909822D707C0000E1A76 /* Main.storyboard */; };
 		9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909B22D707C2000E1A76 /* Assets.xcassets */; };
 		9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909D22D707C2000E1A76 /* LaunchScreen.storyboard */; };
 		9F6390AA22D707C2000E1A76 /* Nanopool_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390A922D707C2000E1A76 /* Nanopool_ClientTests.swift */; };
+		9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390BD22D9E479000E1A76 /* ViewModel.swift */; };
+		9F6390C022D9E48B000E1A76 /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390BF22D9E48B000E1A76 /* ViewModelBased.swift */; };
+		9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */; };
+		9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */; };
+		9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C622D9E563000E1A76 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +33,7 @@
 /* Begin PBXFileReference section */
 		9F63909122D707C0000E1A76 /* Nanopool Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nanopool Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F63909422D707C0000E1A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F63909622D707C0000E1A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F63909622D707C0000E1A76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		9F63909922D707C0000E1A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F63909B22D707C2000E1A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F63909E22D707C2000E1A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +41,11 @@
 		9F6390A522D707C2000E1A76 /* Nanopool ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nanopool ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6390A922D707C2000E1A76 /* Nanopool_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nanopool_ClientTests.swift; sourceTree = "<group>"; };
 		9F6390AB22D707C2000E1A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6390BD22D9E479000E1A76 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9F6390BF22D9E48B000E1A76 /* ViewModelBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
+		9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		9F6390C622D9E563000E1A76 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +119,8 @@
 		9F6390B522D70852000E1A76 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9F63909622D707C0000E1A76 /* ViewController.swift */,
+				9F6390C622D9E563000E1A76 /* TabBarViewController.swift */,
+				9F63909622D707C0000E1A76 /* DashboardViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,6 +128,7 @@
 		9F6390B622D70859000E1A76 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390C522D9E543000E1A76 /* ViewControllers */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,8 +176,19 @@
 		9F6390BC22D70898000E1A76 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390BD22D9E479000E1A76 /* ViewModel.swift */,
+				9F6390BF22D9E48B000E1A76 /* ViewModelBased.swift */,
+				9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9F6390C522D9E543000E1A76 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F63909722D707C0000E1A76 /* ViewController.swift in Sources */,
+				9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */,
+				9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */,
+				9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */,
+				9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */,
+				9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */,
+				9F6390C022D9E48B000E1A76 /* ViewModelBased.swift in Sources */,
 				9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
