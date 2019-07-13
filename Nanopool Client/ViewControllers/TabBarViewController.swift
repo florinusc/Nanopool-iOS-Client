@@ -19,6 +19,7 @@ class TabBarViewController: UITabBarController {
     // MARK: - Setup
     private func setup() {
         let dashboardViewController = DashboardViewController.instantiate(with: DashboardViewModel())
+        dashboardViewController.tabBarItem = UITabBarItem(title: "Dashboard", image: UIImage(named: "dashboard"), tag: 0)
         viewControllers = [dashboardViewController]
     }
 }
