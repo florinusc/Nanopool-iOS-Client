@@ -18,6 +18,12 @@
 		9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */; };
 		9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */; };
 		9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C622D9E563000E1A76 /* TabBarViewController.swift */; };
+		9F6390CA22D9EFCA000E1A76 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390C822D9EFCA000E1A76 /* DashboardTableViewCell.swift */; };
+		9F6390CB22D9EFCA000E1A76 /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6390C922D9EFCA000E1A76 /* DashboardTableViewCell.xib */; };
+		9F6390CE22D9EFF8000E1A76 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390CD22D9EFF8000E1A76 /* NibLoadableView.swift */; };
+		9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390CF22D9F00E000E1A76 /* ReusableView.swift */; };
+		9F6390D222D9F020000E1A76 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */; };
+		9F6390D422D9F02C000E1A76 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		9F6390C622D9E563000E1A76 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9F6390C822D9EFCA000E1A76 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		9F6390C922D9EFCA000E1A76 /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
+		9F6390CD22D9EFF8000E1A76 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		9F6390CF22D9F00E000E1A76 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,8 @@
 		9F6390B822D7086D000E1A76 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390C822D9EFCA000E1A76 /* DashboardTableViewCell.swift */,
+				9F6390C922D9EFCA000E1A76 /* DashboardTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -168,6 +182,7 @@
 		9F6390BB22D70891000E1A76 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9F6390CC22D9EFDF000E1A76 /* Extensions */,
 				9F6390BC22D70898000E1A76 /* Protocols */,
 			);
 			path = Helpers;
@@ -179,6 +194,8 @@
 				9F6390BD22D9E479000E1A76 /* ViewModel.swift */,
 				9F6390BF22D9E48B000E1A76 /* ViewModelBased.swift */,
 				9F6390C122D9E4B5000E1A76 /* Storyboarded.swift */,
+				9F6390CD22D9EFF8000E1A76 /* NibLoadableView.swift */,
+				9F6390CF22D9F00E000E1A76 /* ReusableView.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -189,6 +206,15 @@
 				9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F6390CC22D9EFDF000E1A76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F6390D122D9F020000E1A76 /* UITableView+Extension.swift */,
+				9F6390D322D9F02C000E1A76 /* UITableViewCell+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +300,7 @@
 			files = (
 				9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */,
 				9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */,
+				9F6390CB22D9EFCA000E1A76 /* DashboardTableViewCell.xib in Resources */,
 				9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,9 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6390D222D9F020000E1A76 /* UITableView+Extension.swift in Sources */,
 				9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */,
+				9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */,
 				9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */,
+				9F6390CA22D9EFCA000E1A76 /* DashboardTableViewCell.swift in Sources */,
+				9F6390CE22D9EFF8000E1A76 /* NibLoadableView.swift in Sources */,
 				9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */,
+				9F6390D422D9F02C000E1A76 /* UITableViewCell+Extension.swift in Sources */,
 				9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */,
 				9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */,
 				9F6390C022D9E48B000E1A76 /* ViewModelBased.swift in Sources */,
