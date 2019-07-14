@@ -11,7 +11,7 @@ import UIKit
 class TabBarViewController: UITabBarController {
     
     // MARK: - Private constants
-    private let repository = MockRepository()
+    private let repository = OnlineRepository()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
