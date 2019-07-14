@@ -10,4 +10,5 @@ import Foundation
 
 enum Constants {
     static let dashboardHeaderDateFormat = "MMMM dd yyyy"
+    static let baseUrl = "https://api.nanopool.org/v1"
 }

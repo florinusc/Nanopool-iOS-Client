@@ -32,17 +32,10 @@
 		9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E222D9FD59000E1A76 /* CustomError.swift */; };
 		9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */; };
 		9F6390E822DA1CA2000E1A76 /* Coins.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6390E722DA1CA2000E1A76 /* Coins.plist */; };
-		9F63917222DB3E0E000E1A76 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916322DB3DFF000E1A76 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917322DB3E0E000E1A76 /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915D22DB3DFF000E1A76 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917422DB3E0E000E1A76 /* ReactiveMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916022DB3DFF000E1A76 /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917522DB3E0E000E1A76 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916122DB3DFF000E1A76 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917622DB3E0E000E1A76 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916622DB3DFF000E1A76 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917722DB3E0E000E1A76 /* RxAtomic.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916522DB3DFF000E1A76 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917822DB3E0E000E1A76 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915E22DB3DFF000E1A76 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917922DB3E0E000E1A76 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916222DB3DFF000E1A76 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917A22DB3E0E000E1A76 /* RxMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916422DB3DFF000E1A76 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917B22DB3E0E000E1A76 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915C22DB3DFF000E1A76 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63917C22DB3E0E000E1A76 /* RxTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915F22DB3DFF000E1A76 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917E22DB3E58000E1A76 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63917D22DB3E58000E1A76 /* SessionManager.swift */; };
+		9F63918022DB3E62000E1A76 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63917F22DB3E62000E1A76 /* RequestType.swift */; };
+		F7394DEC896A5C67823A9B31 /* Pods_Nanopool_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E217D501E6E1DE4E27E25 /* Pods_Nanopool_Client.framework */; };
+		F85654BFE21A20760258440E /* Pods_Nanopool_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,30 +48,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9F63913A22DB3D15000E1A76 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9F63917222DB3E0E000E1A76 /* Alamofire.framework in CopyFiles */,
-				9F63917322DB3E0E000E1A76 /* Moya.framework in CopyFiles */,
-				9F63917422DB3E0E000E1A76 /* ReactiveMoya.framework in CopyFiles */,
-				9F63917522DB3E0E000E1A76 /* ReactiveSwift.framework in CopyFiles */,
-				9F63917622DB3E0E000E1A76 /* Result.framework in CopyFiles */,
-				9F63917722DB3E0E000E1A76 /* RxAtomic.framework in CopyFiles */,
-				9F63917822DB3E0E000E1A76 /* RxBlocking.framework in CopyFiles */,
-				9F63917922DB3E0E000E1A76 /* RxCocoa.framework in CopyFiles */,
-				9F63917A22DB3E0E000E1A76 /* RxMoya.framework in CopyFiles */,
-				9F63917B22DB3E0E000E1A76 /* RxSwift.framework in CopyFiles */,
-				9F63917C22DB3E0E000E1A76 /* RxTest.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		563E217D501E6E1DE4E27E25 /* Pods_Nanopool_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nanopool_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64826396A9CC3D459901CC52 /* Pods-Nanopool ClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool ClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool ClientTests/Pods-Nanopool ClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nanopool_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9B31548A358B731532C4FA /* Pods-Nanopool ClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool ClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool ClientTests/Pods-Nanopool ClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F63909122D707C0000E1A76 /* Nanopool Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nanopool Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F63909422D707C0000E1A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F63909622D707C0000E1A76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -108,17 +82,10 @@
 		9F6390E222D9FD59000E1A76 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellViewModel.swift; sourceTree = "<group>"; };
 		9F6390E722DA1CA2000E1A76 /* Coins.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Coins.plist; sourceTree = "<group>"; };
-		9F63915C22DB3DFF000E1A76 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		9F63915D22DB3DFF000E1A76 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
-		9F63915E22DB3DFF000E1A76 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		9F63915F22DB3DFF000E1A76 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		9F63916022DB3DFF000E1A76 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
-		9F63916122DB3DFF000E1A76 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
-		9F63916222DB3DFF000E1A76 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		9F63916322DB3DFF000E1A76 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		9F63916422DB3DFF000E1A76 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
-		9F63916522DB3DFF000E1A76 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
-		9F63916622DB3DFF000E1A76 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		9F63917D22DB3E58000E1A76 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		9F63917F22DB3E62000E1A76 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		ACE4206AC3146D81AC7F484E /* Pods-Nanopool Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.debug.xcconfig"; sourceTree = "<group>"; };
+		B5CDA2841114D4C8FE94F38F /* Pods-Nanopool Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7394DEC896A5C67823A9B31 /* Pods_Nanopool_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +101,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85654BFE21A20760258440E /* Pods_Nanopool_ClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720B9FB79F667F8C426F80FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACE4206AC3146D81AC7F484E /* Pods-Nanopool Client.debug.xcconfig */,
+				B5CDA2841114D4C8FE94F38F /* Pods-Nanopool Client.release.xcconfig */,
+				9E9B31548A358B731532C4FA /* Pods-Nanopool ClientTests.debug.xcconfig */,
+				64826396A9CC3D459901CC52 /* Pods-Nanopool ClientTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F63908822D707C0000E1A76 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +126,7 @@
 				9F6390A822D707C2000E1A76 /* Nanopool ClientTests */,
 				9F63909222D707C0000E1A76 /* Products */,
 				9F6390E922DB099C000E1A76 /* Frameworks */,
+				720B9FB79F667F8C426F80FE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +280,8 @@
 		9F6390DA22D9F8F8000E1A76 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9F63917D22DB3E58000E1A76 /* SessionManager.swift */,
+				9F63917F22DB3E62000E1A76 /* RequestType.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -314,17 +297,8 @@
 		9F6390E922DB099C000E1A76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F63916322DB3DFF000E1A76 /* Alamofire.framework */,
-				9F63915D22DB3DFF000E1A76 /* Moya.framework */,
-				9F63916022DB3DFF000E1A76 /* ReactiveMoya.framework */,
-				9F63916122DB3DFF000E1A76 /* ReactiveSwift.framework */,
-				9F63916622DB3DFF000E1A76 /* Result.framework */,
-				9F63916522DB3DFF000E1A76 /* RxAtomic.framework */,
-				9F63915E22DB3DFF000E1A76 /* RxBlocking.framework */,
-				9F63916222DB3DFF000E1A76 /* RxCocoa.framework */,
-				9F63916422DB3DFF000E1A76 /* RxMoya.framework */,
-				9F63915C22DB3DFF000E1A76 /* RxSwift.framework */,
-				9F63915F22DB3DFF000E1A76 /* RxTest.framework */,
+				563E217D501E6E1DE4E27E25 /* Pods_Nanopool_Client.framework */,
+				7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,11 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F6390AE22D707C2000E1A76 /* Build configuration list for PBXNativeTarget "Nanopool Client" */;
 			buildPhases = (
+				61469E5001CE89640D1872D9 /* [CP] Check Pods Manifest.lock */,
 				9F63908D22D707C0000E1A76 /* Sources */,
 				9F63908E22D707C0000E1A76 /* Frameworks */,
 				9F63908F22D707C0000E1A76 /* Resources */,
-				9F63910022DB09F3000E1A76 /* ShellScript */,
-				9F63913A22DB3D15000E1A76 /* CopyFiles */,
+				4F3949757F62E820BA900815 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +329,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F6390B122D707C2000E1A76 /* Build configuration list for PBXNativeTarget "Nanopool ClientTests" */;
 			buildPhases = (
+				714493A378238E1592004E09 /* [CP] Check Pods Manifest.lock */,
 				9F6390A122D707C2000E1A76 /* Sources */,
 				9F6390A222D707C2000E1A76 /* Frameworks */,
 				9F6390A322D707C2000E1A76 /* Resources */,
@@ -430,22 +405,77 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9F63910022DB09F3000E1A76 /* ShellScript */ = {
+		4F3949757F62E820BA900815 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61469E5001CE89640D1872D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nanopool Client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		714493A378238E1592004E09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nanopool ClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -456,6 +486,7 @@
 			files = (
 				9F6390D222D9F020000E1A76 /* UITableView+Extension.swift in Sources */,
 				9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */,
+				9F63918022DB3E62000E1A76 /* RequestType.swift in Sources */,
 				9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */,
 				9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */,
 				9F6390CA22D9EFCA000E1A76 /* DashboardCell.swift in Sources */,
@@ -472,6 +503,7 @@
 				9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */,
 				9F6390C022D9E48B000E1A76 /* ViewModelBased.swift in Sources */,
 				9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */,
+				9F63917E22DB3E58000E1A76 /* SessionManager.swift in Sources */,
 				9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +664,7 @@
 		};
 		9F6390AF22D707C2000E1A76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE4206AC3146D81AC7F484E /* Pods-Nanopool Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,6 +689,7 @@
 		};
 		9F6390B022D707C2000E1A76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5CDA2841114D4C8FE94F38F /* Pods-Nanopool Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -680,6 +714,7 @@
 		};
 		9F6390B222D707C2000E1A76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9B31548A358B731532C4FA /* Pods-Nanopool ClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -701,6 +736,7 @@
 		};
 		9F6390B322D707C2000E1A76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64826396A9CC3D459901CC52 /* Pods-Nanopool ClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
