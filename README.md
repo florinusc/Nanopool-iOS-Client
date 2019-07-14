@@ -2,13 +2,13 @@
 
 ## Requirements
 
-- [Carthage](https://github.com/Carthage/Carthage#installing-carthage)
+- [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation)
 
 ## Installation
 
 - Clone this repo
-- Install Carthage dependencies
+- Install CocoaPods dependencies
 
 ```sh
-carthage update
+pod install
 ```
