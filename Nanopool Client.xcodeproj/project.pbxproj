@@ -32,6 +32,17 @@
 		9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E222D9FD59000E1A76 /* CustomError.swift */; };
 		9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */; };
 		9F6390E822DA1CA2000E1A76 /* Coins.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6390E722DA1CA2000E1A76 /* Coins.plist */; };
+		9F6390F522DB099C000E1A76 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390EA22DB099C000E1A76 /* RxTest.framework */; };
+		9F6390F622DB099C000E1A76 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390EB22DB099C000E1A76 /* RxCocoa.framework */; };
+		9F6390F722DB099C000E1A76 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390EC22DB099C000E1A76 /* ReactiveSwift.framework */; };
+		9F6390F822DB099C000E1A76 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390ED22DB099C000E1A76 /* RxBlocking.framework */; };
+		9F6390F922DB099C000E1A76 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390EE22DB099C000E1A76 /* Alamofire.framework */; };
+		9F6390FA22DB099C000E1A76 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390EF22DB099C000E1A76 /* Result.framework */; };
+		9F6390FB22DB099C000E1A76 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390F022DB099C000E1A76 /* RxAtomic.framework */; };
+		9F6390FC22DB099C000E1A76 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390F122DB099C000E1A76 /* RxMoya.framework */; };
+		9F6390FD22DB099C000E1A76 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390F222DB099C000E1A76 /* Moya.framework */; };
+		9F6390FE22DB099C000E1A76 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390F322DB099C000E1A76 /* ReactiveMoya.framework */; };
+		9F6390FF22DB099C000E1A76 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6390F422DB099C000E1A76 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +85,17 @@
 		9F6390E222D9FD59000E1A76 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellViewModel.swift; sourceTree = "<group>"; };
 		9F6390E722DA1CA2000E1A76 /* Coins.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Coins.plist; sourceTree = "<group>"; };
+		9F6390EA22DB099C000E1A76 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		9F6390EB22DB099C000E1A76 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		9F6390EC22DB099C000E1A76 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		9F6390ED22DB099C000E1A76 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		9F6390EE22DB099C000E1A76 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9F6390EF22DB099C000E1A76 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		9F6390F022DB099C000E1A76 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		9F6390F122DB099C000E1A76 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		9F6390F222DB099C000E1A76 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		9F6390F322DB099C000E1A76 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		9F6390F422DB099C000E1A76 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +103,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6390F522DB099C000E1A76 /* RxTest.framework in Frameworks */,
+				9F6390F622DB099C000E1A76 /* RxCocoa.framework in Frameworks */,
+				9F6390F722DB099C000E1A76 /* ReactiveSwift.framework in Frameworks */,
+				9F6390F822DB099C000E1A76 /* RxBlocking.framework in Frameworks */,
+				9F6390F922DB099C000E1A76 /* Alamofire.framework in Frameworks */,
+				9F6390FA22DB099C000E1A76 /* Result.framework in Frameworks */,
+				9F6390FB22DB099C000E1A76 /* RxAtomic.framework in Frameworks */,
+				9F6390FC22DB099C000E1A76 /* RxMoya.framework in Frameworks */,
+				9F6390FD22DB099C000E1A76 /* Moya.framework in Frameworks */,
+				9F6390FE22DB099C000E1A76 /* ReactiveMoya.framework in Frameworks */,
+				9F6390FF22DB099C000E1A76 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +133,7 @@
 				9F63909322D707C0000E1A76 /* Nanopool Client */,
 				9F6390A822D707C2000E1A76 /* Nanopool ClientTests */,
 				9F63909222D707C0000E1A76 /* Products */,
+				9F6390E922DB099C000E1A76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +299,24 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		9F6390E922DB099C000E1A76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F6390EE22DB099C000E1A76 /* Alamofire.framework */,
+				9F6390F222DB099C000E1A76 /* Moya.framework */,
+				9F6390F322DB099C000E1A76 /* ReactiveMoya.framework */,
+				9F6390EC22DB099C000E1A76 /* ReactiveSwift.framework */,
+				9F6390EF22DB099C000E1A76 /* Result.framework */,
+				9F6390F022DB099C000E1A76 /* RxAtomic.framework */,
+				9F6390ED22DB099C000E1A76 /* RxBlocking.framework */,
+				9F6390EB22DB099C000E1A76 /* RxCocoa.framework */,
+				9F6390F122DB099C000E1A76 /* RxMoya.framework */,
+				9F6390F422DB099C000E1A76 /* RxSwift.framework */,
+				9F6390EA22DB099C000E1A76 /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +327,7 @@
 				9F63908D22D707C0000E1A76 /* Sources */,
 				9F63908E22D707C0000E1A76 /* Frameworks */,
 				9F63908F22D707C0000E1A76 /* Resources */,
+				9F63910022DB09F3000E1A76 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -362,6 +415,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F63910022DB09F3000E1A76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F63908D22D707C0000E1A76 /* Sources */ = {
@@ -550,6 +623,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Nanopool Client/Project Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,6 +646,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Nanopool Client/Project Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
