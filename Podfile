@@ -8,6 +8,7 @@ target 'Nanopool Client' do
   # Pods for Nanopool Client
   pod 'Moya', '~> 13.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod "PromiseKit", "~> 6.8"
 
   target 'Nanopool ClientTests' do
     inherit! :search_paths

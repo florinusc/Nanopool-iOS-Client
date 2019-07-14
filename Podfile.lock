@@ -5,26 +5,38 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - PromiseKit (6.8.4):
+    - PromiseKit/CorePromise (= 6.8.4)
+    - PromiseKit/Foundation (= 6.8.4)
+    - PromiseKit/UIKit (= 6.8.4)
+  - PromiseKit/CorePromise (6.8.4)
+  - PromiseKit/Foundation (6.8.4):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.4):
+    - PromiseKit/CorePromise
   - Result (4.1.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Moya (~> 13.0)
+  - PromiseKit (~> 6.8)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Moya
+    - PromiseKit
     - Result
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 2f01a2dca5546aa7393bfef59a35c8a9c976c8ec
+PODFILE CHECKSUM: bb7b656f8836f4a843b28fbb57c949d4614ec9a4
 
 COCOAPODS: 1.5.3
