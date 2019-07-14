@@ -32,17 +32,17 @@
 		9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E222D9FD59000E1A76 /* CustomError.swift */; };
 		9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */; };
 		9F6390E822DA1CA2000E1A76 /* Coins.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6390E722DA1CA2000E1A76 /* Coins.plist */; };
-		9F63913B22DB3D1C000E1A76 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63911322DB3BA1000E1A76 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63913C22DB3D1C000E1A76 /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63910C22DB3BA0000E1A76 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63913D22DB3D1C000E1A76 /* ReactiveMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63910D22DB3BA0000E1A76 /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63913E22DB3D1C000E1A76 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63911222DB3BA1000E1A76 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63913F22DB3D1C000E1A76 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63911622DB3BA1000E1A76 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63914022DB3D1C000E1A76 /* RxAtomic.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63910F22DB3BA1000E1A76 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63914122DB3D1C000E1A76 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63911022DB3BA1000E1A76 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63914222DB3D1C000E1A76 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63911422DB3BA1000E1A76 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63914322DB3D1C000E1A76 /* RxMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63910E22DB3BA1000E1A76 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63914422DB3D1C000E1A76 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63911522DB3BA1000E1A76 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F63914522DB3D1C000E1A76 /* RxTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63911122DB3BA1000E1A76 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917222DB3E0E000E1A76 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916322DB3DFF000E1A76 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917322DB3E0E000E1A76 /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915D22DB3DFF000E1A76 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917422DB3E0E000E1A76 /* ReactiveMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916022DB3DFF000E1A76 /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917522DB3E0E000E1A76 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916122DB3DFF000E1A76 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917622DB3E0E000E1A76 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916622DB3DFF000E1A76 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917722DB3E0E000E1A76 /* RxAtomic.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916522DB3DFF000E1A76 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917822DB3E0E000E1A76 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915E22DB3DFF000E1A76 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917922DB3E0E000E1A76 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916222DB3DFF000E1A76 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917A22DB3E0E000E1A76 /* RxMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63916422DB3DFF000E1A76 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917B22DB3E0E000E1A76 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915C22DB3DFF000E1A76 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F63917C22DB3E0E000E1A76 /* RxTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F63915F22DB3DFF000E1A76 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,23 +58,23 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		9F63913A22DB3D15000E1A76 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F63913B22DB3D1C000E1A76 /* Alamofire.framework in CopyFiles */,
-				9F63913C22DB3D1C000E1A76 /* Moya.framework in CopyFiles */,
-				9F63913D22DB3D1C000E1A76 /* ReactiveMoya.framework in CopyFiles */,
-				9F63913E22DB3D1C000E1A76 /* ReactiveSwift.framework in CopyFiles */,
-				9F63913F22DB3D1C000E1A76 /* Result.framework in CopyFiles */,
-				9F63914022DB3D1C000E1A76 /* RxAtomic.framework in CopyFiles */,
-				9F63914122DB3D1C000E1A76 /* RxBlocking.framework in CopyFiles */,
-				9F63914222DB3D1C000E1A76 /* RxCocoa.framework in CopyFiles */,
-				9F63914322DB3D1C000E1A76 /* RxMoya.framework in CopyFiles */,
-				9F63914422DB3D1C000E1A76 /* RxSwift.framework in CopyFiles */,
-				9F63914522DB3D1C000E1A76 /* RxTest.framework in CopyFiles */,
+				9F63917222DB3E0E000E1A76 /* Alamofire.framework in CopyFiles */,
+				9F63917322DB3E0E000E1A76 /* Moya.framework in CopyFiles */,
+				9F63917422DB3E0E000E1A76 /* ReactiveMoya.framework in CopyFiles */,
+				9F63917522DB3E0E000E1A76 /* ReactiveSwift.framework in CopyFiles */,
+				9F63917622DB3E0E000E1A76 /* Result.framework in CopyFiles */,
+				9F63917722DB3E0E000E1A76 /* RxAtomic.framework in CopyFiles */,
+				9F63917822DB3E0E000E1A76 /* RxBlocking.framework in CopyFiles */,
+				9F63917922DB3E0E000E1A76 /* RxCocoa.framework in CopyFiles */,
+				9F63917A22DB3E0E000E1A76 /* RxMoya.framework in CopyFiles */,
+				9F63917B22DB3E0E000E1A76 /* RxSwift.framework in CopyFiles */,
+				9F63917C22DB3E0E000E1A76 /* RxTest.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -108,28 +108,17 @@
 		9F6390E222D9FD59000E1A76 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellViewModel.swift; sourceTree = "<group>"; };
 		9F6390E722DA1CA2000E1A76 /* Coins.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Coins.plist; sourceTree = "<group>"; };
-		9F6390EA22DB099C000E1A76 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		9F6390EB22DB099C000E1A76 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		9F6390EC22DB099C000E1A76 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
-		9F6390ED22DB099C000E1A76 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		9F6390EE22DB099C000E1A76 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		9F6390EF22DB099C000E1A76 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		9F6390F022DB099C000E1A76 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
-		9F6390F122DB099C000E1A76 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
-		9F6390F222DB099C000E1A76 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
-		9F6390F322DB099C000E1A76 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
-		9F6390F422DB099C000E1A76 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		9F63910C22DB3BA0000E1A76 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
-		9F63910D22DB3BA0000E1A76 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
-		9F63910E22DB3BA1000E1A76 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
-		9F63910F22DB3BA1000E1A76 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
-		9F63911022DB3BA1000E1A76 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		9F63911122DB3BA1000E1A76 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		9F63911222DB3BA1000E1A76 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
-		9F63911322DB3BA1000E1A76 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		9F63911422DB3BA1000E1A76 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		9F63911522DB3BA1000E1A76 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		9F63911622DB3BA1000E1A76 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		9F63915C22DB3DFF000E1A76 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		9F63915D22DB3DFF000E1A76 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		9F63915E22DB3DFF000E1A76 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		9F63915F22DB3DFF000E1A76 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		9F63916022DB3DFF000E1A76 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		9F63916122DB3DFF000E1A76 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		9F63916222DB3DFF000E1A76 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		9F63916322DB3DFF000E1A76 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9F63916422DB3DFF000E1A76 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		9F63916522DB3DFF000E1A76 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		9F63916622DB3DFF000E1A76 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,17 +142,6 @@
 		9F63908822D707C0000E1A76 = {
 			isa = PBXGroup;
 			children = (
-				9F63911322DB3BA1000E1A76 /* Alamofire.framework */,
-				9F63910C22DB3BA0000E1A76 /* Moya.framework */,
-				9F63910D22DB3BA0000E1A76 /* ReactiveMoya.framework */,
-				9F63911222DB3BA1000E1A76 /* ReactiveSwift.framework */,
-				9F63911622DB3BA1000E1A76 /* Result.framework */,
-				9F63910F22DB3BA1000E1A76 /* RxAtomic.framework */,
-				9F63911022DB3BA1000E1A76 /* RxBlocking.framework */,
-				9F63911422DB3BA1000E1A76 /* RxCocoa.framework */,
-				9F63910E22DB3BA1000E1A76 /* RxMoya.framework */,
-				9F63911522DB3BA1000E1A76 /* RxSwift.framework */,
-				9F63911122DB3BA1000E1A76 /* RxTest.framework */,
 				9F63909322D707C0000E1A76 /* Nanopool Client */,
 				9F6390A822D707C2000E1A76 /* Nanopool ClientTests */,
 				9F63909222D707C0000E1A76 /* Products */,
@@ -336,17 +314,17 @@
 		9F6390E922DB099C000E1A76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F6390EE22DB099C000E1A76 /* Alamofire.framework */,
-				9F6390F222DB099C000E1A76 /* Moya.framework */,
-				9F6390F322DB099C000E1A76 /* ReactiveMoya.framework */,
-				9F6390EC22DB099C000E1A76 /* ReactiveSwift.framework */,
-				9F6390EF22DB099C000E1A76 /* Result.framework */,
-				9F6390F022DB099C000E1A76 /* RxAtomic.framework */,
-				9F6390ED22DB099C000E1A76 /* RxBlocking.framework */,
-				9F6390EB22DB099C000E1A76 /* RxCocoa.framework */,
-				9F6390F122DB099C000E1A76 /* RxMoya.framework */,
-				9F6390F422DB099C000E1A76 /* RxSwift.framework */,
-				9F6390EA22DB099C000E1A76 /* RxTest.framework */,
+				9F63916322DB3DFF000E1A76 /* Alamofire.framework */,
+				9F63915D22DB3DFF000E1A76 /* Moya.framework */,
+				9F63916022DB3DFF000E1A76 /* ReactiveMoya.framework */,
+				9F63916122DB3DFF000E1A76 /* ReactiveSwift.framework */,
+				9F63916622DB3DFF000E1A76 /* Result.framework */,
+				9F63916522DB3DFF000E1A76 /* RxAtomic.framework */,
+				9F63915E22DB3DFF000E1A76 /* RxBlocking.framework */,
+				9F63916222DB3DFF000E1A76 /* RxCocoa.framework */,
+				9F63916422DB3DFF000E1A76 /* RxMoya.framework */,
+				9F63915C22DB3DFF000E1A76 /* RxSwift.framework */,
+				9F63915F22DB3DFF000E1A76 /* RxTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -661,6 +639,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Nanopool Client/Project Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -684,6 +663,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Nanopool Client/Project Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
