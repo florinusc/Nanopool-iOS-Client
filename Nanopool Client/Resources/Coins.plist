@@ -8,7 +8,7 @@
 	<string>Monero</string>
 	<key>rvn</key>
 	<string>Raven</string>
-	<key>grin</key>
+	<key>grin29</key>
 	<string>Grin-29</string>
 	<key>zec</key>
 	<string>ZCash</string>
@@ -16,7 +16,5 @@
 	<string>Ethereum Classic</string>
 	<key>pasc</key>
 	<string>Pascal</string>
-	<key>etn</key>
-	<string>Electroneum</string>
 </dict>
 </plist>

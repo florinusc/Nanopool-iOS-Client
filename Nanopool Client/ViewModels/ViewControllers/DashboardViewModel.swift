@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 class DashboardViewModel: ViewModel {
     
@@ -15,7 +16,10 @@ class DashboardViewModel: ViewModel {
     
     // MARK: - Private variables
     private var poolInformationArray = [PoolInformation]()
-    private var coins = [String]()
+    private var coins: [String] {
+        let coinDictionary = CoinDictionary.shared.getCoinDictionary()
+        return Array(coinDictionary.keys)
+    }
     
     // MARK: - Public variables
     var numberOfCoins: Int {
@@ -25,47 +29,43 @@ class DashboardViewModel: ViewModel {
     // MARK: Init
     init(repository: Repository) {
         self.repository = repository
-        retrieveCoinList()
     }
     
     // MARK: - Private helpers
-    private func retrieveCoinList() {
-        var nsDictionary: NSDictionary?
-        if let path = Bundle.main.path(forResource: "Coins", ofType: "plist") {
-            nsDictionary = NSDictionary(contentsOfFile: path)
-        }
-        coins = nsDictionary?.allKeys as? [String] ?? []
-    }
-    
-    private func getPoolInformation(for coin: String, completion block: @escaping (Error?) -> Void) {
-        repository.getPoolInformation(for: coin) { [weak self] (result) in
-            guard let self = self else { return }
-            switch result {
-            case .failure(let error):
-                block(error)
-            case .success(let poolInformation):
-                self.poolInformationArray.append(poolInformation)
-                block(nil)
+    private func getPoolInformation(for coin: String) -> Promise<Error?> {
+        return Promise { seal in
+            repository.getPoolInformation(for: coin) { [weak self] (result) in
+                guard let self = self else { return }
+                switch result {
+                case .failure(let error):
+                    seal.reject(error)
+                case .success(let poolInformation):
+                    self.poolInformationArray.append(poolInformation)
+                    seal.fulfill(nil)
+                }
             }
         }
     }
     
     // MARK: - Public helpers
     func getPoolInformation(completion block: @escaping ([Error]) -> Void) {
-        var errors: [Error] = []
-        coins.forEach { (coin) in
-            getPoolInformation(for: coin, completion: { (error) in
-                if let error = error {
-                    errors.append(error)
+        let promises = coins.map({ getPoolInformation(for: $0) })
+        when(resolved: promises).done { results in
+            var errors = [Error]()
+            results.forEach {
+                guard !$0.isFulfilled else { return }
+                switch $0 {
+                case .rejected(let error): errors.append(error)
+                case .fulfilled: break
                 }
-            })
+            }
+            self.poolInformationArray.sort { $0.coin < $1.coin }
+            block(errors)
         }
-        block(errors)
     }
     
     func dashboardCellViewModel(at indexPath: IndexPath) -> DashboardCellViewModel? {
         guard indexPath.row < numberOfCoins else { return nil }
         return DashboardCellViewModel(poolInformation: poolInformationArray[indexPath.row])
     }
-    
 }

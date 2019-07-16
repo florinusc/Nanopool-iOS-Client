@@ -64,6 +64,7 @@ class DashboardViewController: UIViewController, ViewModelBased {
         viewModel.getPoolInformation { [weak self] (errors) in
             guard let self = self else { return }
             if !errors.isEmpty {
+                print(errors)
                 // TODO: - present alert for errors
                 return
             }

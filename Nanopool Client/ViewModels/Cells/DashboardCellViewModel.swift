@@ -12,11 +12,8 @@ struct DashboardCellViewModel {
     let poolInformation: PoolInformation
     
     var coinName: String? {
-        var nsDictionary: NSDictionary?
-        if let path = Bundle.main.path(forResource: "Coins", ofType: "plist") {
-            nsDictionary = NSDictionary(contentsOfFile: path)
-        }
-        return nsDictionary?[poolInformation.coin] as? String
+        let coinDictionary = CoinDictionary.shared.getCoinDictionary()
+        return coinDictionary[poolInformation.coin]
     }
     
     var hashrateString: String {
