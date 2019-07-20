@@ -49,6 +49,7 @@ class DashboardViewModel: ViewModel {
     
     // MARK: - Public helpers
     func getPoolInformation(completion block: @escaping ([Error]) -> Void) {
+        poolInformationArray.removeAll()
         let promises = coins.map({ getPoolInformation(for: $0) })
         when(resolved: promises).done { results in
             var errors = [Error]()

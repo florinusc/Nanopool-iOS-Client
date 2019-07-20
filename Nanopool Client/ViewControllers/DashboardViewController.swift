@@ -16,6 +16,7 @@ class DashboardViewController: UIViewController, ViewModelBased {
     // MARK: - Private constants
     private let headerHeight: CGFloat = 70.0
     private let estimatedRowHeight: CGFloat = 200.0
+    private let refreshControl = UIRefreshControl()
     
     // MARK: - Private variables
     private var headerFrame: CGRect {
@@ -42,6 +43,8 @@ class DashboardViewController: UIViewController, ViewModelBased {
         tableView.register(DashboardCell.self)
         tableView.estimatedRowHeight = estimatedRowHeight
         tableView.rowHeight = UITableView.automaticDimension
+        refreshControl.addTarget(self, action: #selector(refreshInformation), for: .valueChanged)
+        tableView.refreshControl = refreshControl
         addHeaderToTableView()
     }
     
@@ -68,7 +71,12 @@ class DashboardViewController: UIViewController, ViewModelBased {
                 return
             }
             self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }
+    }
+    
+    @objc private func refreshInformation() {
+        getInformation()
     }
 }
 
