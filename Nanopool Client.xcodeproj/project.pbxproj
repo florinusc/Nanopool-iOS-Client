@@ -45,6 +45,8 @@
 		9F63919B22E44317000E1A76 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63919A22E44317000E1A76 /* Int+Extension.swift */; };
 		9F63919D22E48254000E1A76 /* Address.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F63919C22E48254000E1A76 /* Address.storyboard */; };
 		9F63919F22E4AEDF000E1A76 /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63919E22E4AEDF000E1A76 /* AddressListViewController.swift */; };
+		9F6391A222E4B027000E1A76 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */; };
+		9F6391A322E4B027000E1A76 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */; };
 		F7394DEC896A5C67823A9B31 /* Pods_Nanopool_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E217D501E6E1DE4E27E25 /* Pods_Nanopool_Client.framework */; };
 		F85654BFE21A20760258440E /* Pods_Nanopool_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +108,8 @@
 		9F63919A22E44317000E1A76 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		9F63919C22E48254000E1A76 /* Address.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Address.storyboard; sourceTree = "<group>"; };
 		9F63919E22E4AEDF000E1A76 /* AddressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
+		9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
 		ACE4206AC3146D81AC7F484E /* Pods-Nanopool Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CDA2841114D4C8FE94F38F /* Pods-Nanopool Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +232,8 @@
 			children = (
 				9F6390C822D9EFCA000E1A76 /* DashboardCell.swift */,
 				9F6390C922D9EFCA000E1A76 /* DashboardCell.xib */,
+				9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */,
+				9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 			files = (
 				9F63919D22E48254000E1A76 /* Address.storyboard in Resources */,
 				9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */,
+				9F6391A322E4B027000E1A76 /* AddressTableViewCell.xib in Resources */,
 				9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */,
 				9F6390CB22D9EFCA000E1A76 /* DashboardCell.xib in Resources */,
 				9F63919522E43838000E1A76 /* LoadingView.xib in Resources */,
@@ -544,6 +551,7 @@
 				9F63919922E442DF000E1A76 /* Formatter+Extension.swift in Sources */,
 				9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */,
 				9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */,
+				9F6391A222E4B027000E1A76 /* AddressTableViewCell.swift in Sources */,
 				9F6390CA22D9EFCA000E1A76 /* DashboardCell.swift in Sources */,
 				9F63918C22DC52CE000E1A76 /* CoinPricesResource.swift in Sources */,
 				9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */,

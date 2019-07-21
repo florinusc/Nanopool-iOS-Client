@@ -17,13 +17,32 @@
                     <view key="view" contentMode="scaleToFill" id="OqG-mM-lxw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SxL-4W-RD5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eFf-eY-UAG" id="tLZ-QT-NPJ"/>
+                                    <outlet property="delegate" destination="eFf-eY-UAG" id="eDw-PA-Urk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.14425501230000001" green="0.1777626276" blue="0.27060699459999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="SxL-4W-RD5" firstAttribute="leading" secondItem="fyh-Qv-yEX" secondAttribute="leading" id="3cm-1K-Zgf"/>
+                            <constraint firstItem="SxL-4W-RD5" firstAttribute="trailing" secondItem="fyh-Qv-yEX" secondAttribute="trailing" id="DEf-06-CeE"/>
+                            <constraint firstItem="SxL-4W-RD5" firstAttribute="top" secondItem="fyh-Qv-yEX" secondAttribute="top" id="V7m-NJ-dWo"/>
+                            <constraint firstItem="SxL-4W-RD5" firstAttribute="bottom" secondItem="fyh-Qv-yEX" secondAttribute="bottom" id="iPA-gE-HzG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fyh-Qv-yEX"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="SxL-4W-RD5" id="xvj-4p-jyb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAi-YW-9sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="162"/>
+            <point key="canvasLocation" x="-175.36231884057972" y="161.38392857142856"/>
         </scene>
     </scenes>
 </document>
