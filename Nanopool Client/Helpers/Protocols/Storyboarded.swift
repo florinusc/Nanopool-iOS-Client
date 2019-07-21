@@ -21,4 +21,5 @@ extension Storyboarded where Self: UIViewController {
 
 enum Storyboards: String {
     case main = "Main"
+    case address = "Address"
 }
