@@ -22,6 +22,7 @@ class DashboardViewController: UIViewController, ViewModelBased {
     private var headerFrame: CGRect {
         return CGRect(x: 20.0, y: 0, width: view.frame.width, height: headerHeight)
     }
+    private var loadingView: LoadingView!
     
     // MARK: - Public variables
     var viewModel: DashboardViewModel!
@@ -34,6 +35,7 @@ class DashboardViewController: UIViewController, ViewModelBased {
     
     // MARK: - Setup
     private func setup() {
+        setupLoadingView()
         getInformation()
         setupTableView()
     }
@@ -46,6 +48,11 @@ class DashboardViewController: UIViewController, ViewModelBased {
         refreshControl.addTarget(self, action: #selector(refreshInformation), for: .valueChanged)
         tableView.refreshControl = refreshControl
         addHeaderToTableView()
+    }
+    
+    private func setupLoadingView() {
+        loadingView = LoadingView.fromNib()
+        loadingView.frame = UIScreen.main.bounds
     }
     
     // MARK: - Private helpers
@@ -64,6 +71,7 @@ class DashboardViewController: UIViewController, ViewModelBased {
     }
     
     private func getInformation() {
+        showLoadingView()
         viewModel.getPoolInformation { [weak self] (errors) in
             guard let self = self else { return }
             if !errors.isEmpty {
@@ -71,12 +79,21 @@ class DashboardViewController: UIViewController, ViewModelBased {
                 return
             }
             self.tableView.reloadData()
+            self.hideLoadingView()
             self.refreshControl.endRefreshing()
         }
     }
     
     @objc private func refreshInformation() {
         getInformation()
+    }
+    
+    private func showLoadingView() {
+        view.addSubview(loadingView)
+    }
+    
+    private func hideLoadingView() {
+        loadingView.removeFromSuperview()
     }
 }
 
