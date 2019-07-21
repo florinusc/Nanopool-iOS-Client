@@ -17,15 +17,15 @@ struct DashboardCellViewModel {
     }
     
     var hashrateString: String {
-        return "\(poolInformation.hashrate)"
+        return poolInformation.hashrate.formattedHashrate()
     }
     
     var minerCountString: String {
-        return "\(poolInformation.minerCount)"
+        return poolInformation.minerCount.formattedWithSeparator
     }
     
     var priceString: String {
-        return "$ \(poolInformation.price)"
+        return "$\(poolInformation.price.format(f: "0.2"))"
     }
     
     var coinLogoImageName: String {

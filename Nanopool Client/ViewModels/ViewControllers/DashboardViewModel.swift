@@ -60,7 +60,7 @@ class DashboardViewModel: ViewModel {
                 case .fulfilled: break
                 }
             }
-            self.poolInformationArray.sort { $0.coin < $1.coin }
+            self.poolInformationArray.sort { $0.hashrate > $1.hashrate }
             block(errors)
         }
     }

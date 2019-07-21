@@ -76,6 +76,8 @@ class DashboardViewController: UIViewController, ViewModelBased {
             guard let self = self else { return }
             if !errors.isEmpty {
                 self.presentAlert(for: errors)
+                self.hideLoadingView()
+                self.refreshControl.endRefreshing()
                 return
             }
             self.tableView.reloadData()
