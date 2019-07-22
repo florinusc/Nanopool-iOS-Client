@@ -15,11 +15,31 @@ PODS:
   - PromiseKit/UIKit (6.8.4):
     - PromiseKit/CorePromise
   - Result (4.1.0)
+  - SwifterSwift (5.0.0):
+    - SwifterSwift/AppKit (= 5.0.0)
+    - SwifterSwift/CoreGraphics (= 5.0.0)
+    - SwifterSwift/CoreLocation (= 5.0.0)
+    - SwifterSwift/Dispatch (= 5.0.0)
+    - SwifterSwift/Foundation (= 5.0.0)
+    - SwifterSwift/MapKit (= 5.0.0)
+    - SwifterSwift/SpriteKit (= 5.0.0)
+    - SwifterSwift/SwiftStdlib (= 5.0.0)
+    - SwifterSwift/UIKit (= 5.0.0)
+  - SwifterSwift/AppKit (5.0.0)
+  - SwifterSwift/CoreGraphics (5.0.0)
+  - SwifterSwift/CoreLocation (5.0.0)
+  - SwifterSwift/Dispatch (5.0.0)
+  - SwifterSwift/Foundation (5.0.0)
+  - SwifterSwift/MapKit (5.0.0)
+  - SwifterSwift/SpriteKit (5.0.0)
+  - SwifterSwift/SwiftStdlib (5.0.0)
+  - SwifterSwift/UIKit (5.0.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Moya (~> 13.0)
   - PromiseKit (~> 6.8)
+  - SwifterSwift
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -28,6 +48,7 @@ SPEC REPOS:
     - Moya
     - PromiseKit
     - Result
+    - SwifterSwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -35,8 +56,9 @@ SPEC CHECKSUMS:
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SwifterSwift: 96f90594b370802f01647c2b1229c74a84ffafee
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: bb7b656f8836f4a843b28fbb57c949d4614ec9a4
+PODFILE CHECKSUM: 7f1fccd7edf641646b6c368577d2bd666ad200ca
 
 COCOAPODS: 1.5.3

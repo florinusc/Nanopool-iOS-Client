@@ -47,6 +47,8 @@
 		9F63919F22E4AEDF000E1A76 /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63919E22E4AEDF000E1A76 /* AddressListViewController.swift */; };
 		9F6391A222E4B027000E1A76 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */; };
 		9F6391A322E4B027000E1A76 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */; };
+		9F6391A522E580C2000E1A76 /* AddressAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6391A422E580C2000E1A76 /* AddressAddView.xib */; };
+		9F6391A722E580D4000E1A76 /* AddressAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6391A622E580D4000E1A76 /* AddressAddView.swift */; };
 		F7394DEC896A5C67823A9B31 /* Pods_Nanopool_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E217D501E6E1DE4E27E25 /* Pods_Nanopool_Client.framework */; };
 		F85654BFE21A20760258440E /* Pods_Nanopool_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +112,8 @@
 		9F63919E22E4AEDF000E1A76 /* AddressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
 		9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		9F6391A422E580C2000E1A76 /* AddressAddView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressAddView.xib; sourceTree = "<group>"; };
+		9F6391A622E580D4000E1A76 /* AddressAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAddView.swift; sourceTree = "<group>"; };
 		ACE4206AC3146D81AC7F484E /* Pods-Nanopool Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CDA2841114D4C8FE94F38F /* Pods-Nanopool Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -354,6 +358,8 @@
 			children = (
 				9F63919222E4382A000E1A76 /* LoadingView.swift */,
 				9F63919422E43838000E1A76 /* LoadingView.xib */,
+				9F6391A622E580D4000E1A76 /* AddressAddView.swift */,
+				9F6391A422E580C2000E1A76 /* AddressAddView.xib */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6391A522E580C2000E1A76 /* AddressAddView.xib in Resources */,
 				9F63919D22E48254000E1A76 /* Address.storyboard in Resources */,
 				9F63909F22D707C2000E1A76 /* LaunchScreen.storyboard in Resources */,
 				9F6391A322E4B027000E1A76 /* AddressTableViewCell.xib in Resources */,
@@ -476,6 +483,7 @@
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -486,6 +494,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +578,7 @@
 				9F63919F22E4AEDF000E1A76 /* AddressListViewController.swift in Sources */,
 				9F6390DF22D9FC73000E1A76 /* Repository.swift in Sources */,
 				9F63919722E43EEF000E1A76 /* Double+Extension.swift in Sources */,
+				9F6391A722E580D4000E1A76 /* AddressAddView.swift in Sources */,
 				9F6390C422D9E503000E1A76 /* DashboardViewModel.swift in Sources */,
 				9F6390C722D9E563000E1A76 /* TabBarViewController.swift in Sources */,
 				9F6390C022D9E48B000E1A76 /* ViewModelBased.swift in Sources */,
