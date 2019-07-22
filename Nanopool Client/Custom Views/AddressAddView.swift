@@ -14,6 +14,9 @@ protocol AddressAddViewDelegate: class {
 
 class AddressAddView: UIView, NibLoadableView {
     
+    // MARK: - IBOutlets
+    @IBOutlet private weak var addButton: UIButton!
+    
     // MARK: - Public variables
     weak var delegate: AddressAddViewDelegate?
     
@@ -44,8 +47,10 @@ class AddressAddView: UIView, NibLoadableView {
             return expanded ? expandedX : retractedX
         }
         let newFrame = CGRect(x: newX, y: self.frame.origin.y, width: self.frame.width, height: self.frame.height)
-        UIView.animate(withDuration: animationDuration) {
+        UIView.animate(withDuration: animationDuration) { [weak self] in
+            guard let self = self else { return }
             self.frame = newFrame
+            self.addButton.rotate(byAngle: self.expanded ? 45.0 : -45.0, ofType: .degrees)
         }
         expanded = !expanded
     }
