@@ -13,6 +13,7 @@ class AddressListViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var shadowView: UIView!
     
     // MARK: - Private constants
     private let estimatedRowHeight: CGFloat = 70.0
@@ -24,7 +25,10 @@ class AddressListViewController: UIViewController {
         return view.frame.width - 70.0
     }
     private var addViewY: CGFloat {
-        return view.frame.height - 200.0
+        if let tabBarHeight = tabBarController?.tabBar.height {
+            return view.frame.height - tabBarHeight - addViewHeight - 40.0
+        }
+        return 0.0
     }
     
     // MARK: - Lifecycle
@@ -65,7 +69,11 @@ extension AddressListViewController: UITableViewDelegate, UITableViewDataSource 
     }
 }
 
-extension AddressListViewController: AddressAddViewDelegate {}
+extension AddressListViewController: AddressAddViewDelegate {
+    func toggle(expanded: Bool) {
+        shadowView.isHidden = !expanded
+    }
+}
 
 extension AddressListViewController: Storyboarded {
     static var storyboardName: Storyboards { return .address }

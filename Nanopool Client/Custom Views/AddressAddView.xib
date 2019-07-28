@@ -28,6 +28,9 @@
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="OEv-5d-o5Q"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYp-lZ-3Yw">
                     <rect key="frame" x="20" y="17.5" width="35" height="35"/>
@@ -40,11 +43,20 @@
                         <action selector="onAddTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ceA-sB-3vs"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Efj-bJ-EgW">
+                    <rect key="frame" x="351.5" y="22.5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Yg3-Fv-RE2"/>
+                        <constraint firstAttribute="width" constant="25" id="cp8-no-pTw"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="Efj-bJ-EgW" firstAttribute="centerY" secondItem="OgH-tl-DMf" secondAttribute="centerY" id="8mw-fq-bX3"/>
                 <constraint firstItem="FYp-lZ-3Yw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="GKc-nJ-udr"/>
                 <constraint firstItem="FYp-lZ-3Yw" firstAttribute="centerY" secondItem="O5T-AP-TQT" secondAttribute="centerY" id="a3I-kE-L3G"/>
+                <constraint firstItem="Efj-bJ-EgW" firstAttribute="centerX" secondItem="OgH-tl-DMf" secondAttribute="centerX" id="ck4-ge-wae"/>
                 <constraint firstItem="O5T-AP-TQT" firstAttribute="leading" secondItem="FYp-lZ-3Yw" secondAttribute="trailing" constant="20" id="gDE-i4-eyb"/>
                 <constraint firstItem="OgH-tl-DMf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="jiI-47-5xY"/>
                 <constraint firstItem="O5T-AP-TQT" firstAttribute="centerY" secondItem="OgH-tl-DMf" secondAttribute="centerY" id="sL9-Xl-MHg"/>
@@ -58,6 +70,8 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="addButton" destination="FYp-lZ-3Yw" id="tmM-FZ-3W6"/>
+                <outlet property="addressTextFiled" destination="O5T-AP-TQT" id="OTF-49-kxp"/>
+                <outlet property="coinLogoImageView" destination="Efj-bJ-EgW" id="n5Q-6B-jB3"/>
             </connections>
             <point key="canvasLocation" x="87.681159420289859" y="145.98214285714286"/>
         </view>

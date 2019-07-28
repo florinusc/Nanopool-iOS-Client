@@ -26,17 +26,26 @@
                                     <outlet property="delegate" destination="eFf-eY-UAG" id="eDw-PA-Urk"/>
                                 </connections>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hff-dj-LHH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3986515410958904" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.14425501230000001" green="0.1777626276" blue="0.27060699459999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="Hff-dj-LHH" firstAttribute="leading" secondItem="OqG-mM-lxw" secondAttribute="leading" id="1gc-q7-sZG"/>
                             <constraint firstItem="SxL-4W-RD5" firstAttribute="leading" secondItem="fyh-Qv-yEX" secondAttribute="leading" id="3cm-1K-Zgf"/>
                             <constraint firstItem="SxL-4W-RD5" firstAttribute="trailing" secondItem="fyh-Qv-yEX" secondAttribute="trailing" id="DEf-06-CeE"/>
                             <constraint firstItem="SxL-4W-RD5" firstAttribute="top" secondItem="fyh-Qv-yEX" secondAttribute="top" id="V7m-NJ-dWo"/>
+                            <constraint firstItem="fyh-Qv-yEX" firstAttribute="trailing" secondItem="Hff-dj-LHH" secondAttribute="trailing" id="f7C-oB-TCU"/>
                             <constraint firstItem="SxL-4W-RD5" firstAttribute="bottom" secondItem="fyh-Qv-yEX" secondAttribute="bottom" id="iPA-gE-HzG"/>
+                            <constraint firstItem="Hff-dj-LHH" firstAttribute="top" secondItem="OqG-mM-lxw" secondAttribute="top" id="kF2-KK-54f"/>
+                            <constraint firstAttribute="bottom" secondItem="Hff-dj-LHH" secondAttribute="bottom" id="u8r-8m-hTY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fyh-Qv-yEX"/>
                     </view>
                     <connections>
+                        <outlet property="shadowView" destination="Hff-dj-LHH" id="DEb-Cu-dpd"/>
                         <outlet property="tableView" destination="SxL-4W-RD5" id="xvj-4p-jyb"/>
                     </connections>
                 </viewController>
