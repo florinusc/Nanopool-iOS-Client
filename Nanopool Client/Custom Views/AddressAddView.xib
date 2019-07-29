@@ -16,18 +16,23 @@
             <rect key="frame" x="0.0" y="0.0" width="409" height="70"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_background" translatesAutoresizingMaskIntoConstraints="NO" id="OgH-tl-DMf">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_background" translatesAutoresizingMaskIntoConstraints="NO" id="OgH-tl-DMf">
                     <rect key="frame" x="339" y="10" width="50" height="50"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="B5T-St-v0b"/>
                         <constraint firstAttribute="height" constant="50" id="Trv-ea-76P"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="fgh-4g-bIs" appends="YES" id="LcH-Ls-KvD"/>
+                    </connections>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type address here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5T-AP-TQT">
                     <rect key="frame" x="75" y="26.5" width="256" height="17"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="OEv-5d-o5Q"/>
                     </connections>
@@ -75,6 +80,12 @@
             </connections>
             <point key="canvasLocation" x="87.681159420289859" y="145.98214285714286"/>
         </view>
+        <tapGestureRecognizer id="fgh-4g-bIs">
+            <connections>
+                <action selector="onTapOnCoinLogo:" destination="iN0-l3-epB" id="3rA-JK-GXa"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="HG0-1I-h0S"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="addIcon" width="48" height="48"/>

@@ -116,4 +116,8 @@ class AddressAddView: UIView, NibLoadableView {
     @IBAction private func onAddTapped(_ sender: UIButton) {
         toggle()
     }
+    
+    @IBAction func onTapOnCoinLogo(_ sender: Any) {
+        print("tapped on logo")
+    }
 }
