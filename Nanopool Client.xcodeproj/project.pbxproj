@@ -49,6 +49,12 @@
 		9F6391A322E4B027000E1A76 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */; };
 		9F6391A522E580C2000E1A76 /* AddressAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6391A422E580C2000E1A76 /* AddressAddView.xib */; };
 		9F6391A722E580D4000E1A76 /* AddressAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6391A622E580D4000E1A76 /* AddressAddView.swift */; };
+		9FCF89C1232AC21600F59201 /* CoinToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89C0232AC21600F59201 /* CoinToolBarView.swift */; };
+		9FCF89C3232AC23500F59201 /* CoinToolBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF89C2232AC23500F59201 /* CoinToolBarView.xib */; };
+		9FCF89C6232AC46E00F59201 /* CoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89C4232AC46E00F59201 /* CoinCollectionViewCell.swift */; };
+		9FCF89C7232AC46E00F59201 /* CoinCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF89C5232AC46E00F59201 /* CoinCollectionViewCell.xib */; };
+		9FCF89C9232AC53A00F59201 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89C8232AC53A00F59201 /* UICollectionView+Extension.swift */; };
+		9FCF89CB232AC55100F59201 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89CA232AC55100F59201 /* UICollectionViewCell+Extension.swift */; };
 		F7394DEC896A5C67823A9B31 /* Pods_Nanopool_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E217D501E6E1DE4E27E25 /* Pods_Nanopool_Client.framework */; };
 		F85654BFE21A20760258440E /* Pods_Nanopool_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */; };
 /* End PBXBuildFile section */
@@ -114,6 +120,12 @@
 		9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
 		9F6391A422E580C2000E1A76 /* AddressAddView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressAddView.xib; sourceTree = "<group>"; };
 		9F6391A622E580D4000E1A76 /* AddressAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAddView.swift; sourceTree = "<group>"; };
+		9FCF89C0232AC21600F59201 /* CoinToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinToolBarView.swift; sourceTree = "<group>"; };
+		9FCF89C2232AC23500F59201 /* CoinToolBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinToolBarView.xib; sourceTree = "<group>"; };
+		9FCF89C4232AC46E00F59201 /* CoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FCF89C5232AC46E00F59201 /* CoinCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCollectionViewCell.xib; sourceTree = "<group>"; };
+		9FCF89C8232AC53A00F59201 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		9FCF89CA232AC55100F59201 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		ACE4206AC3146D81AC7F484E /* Pods-Nanopool Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CDA2841114D4C8FE94F38F /* Pods-Nanopool Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +250,8 @@
 				9F6390C922D9EFCA000E1A76 /* DashboardCell.xib */,
 				9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */,
 				9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */,
+				9FCF89C4232AC46E00F59201 /* CoinCollectionViewCell.swift */,
+				9FCF89C5232AC46E00F59201 /* CoinCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -304,6 +318,8 @@
 				9F63919622E43EEF000E1A76 /* Double+Extension.swift */,
 				9F63919822E442DF000E1A76 /* Formatter+Extension.swift */,
 				9F63919A22E44317000E1A76 /* Int+Extension.swift */,
+				9FCF89C8232AC53A00F59201 /* UICollectionView+Extension.swift */,
+				9FCF89CA232AC55100F59201 /* UICollectionViewCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,6 +376,8 @@
 				9F63919422E43838000E1A76 /* LoadingView.xib */,
 				9F6391A622E580D4000E1A76 /* AddressAddView.swift */,
 				9F6391A422E580C2000E1A76 /* AddressAddView.xib */,
+				9FCF89C0232AC21600F59201 /* CoinToolBarView.swift */,
+				9FCF89C2232AC23500F59201 /* CoinToolBarView.xib */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -455,8 +473,10 @@
 				9F63909C22D707C2000E1A76 /* Assets.xcassets in Resources */,
 				9F6390CB22D9EFCA000E1A76 /* DashboardCell.xib in Resources */,
 				9F63919522E43838000E1A76 /* LoadingView.xib in Resources */,
+				9FCF89C3232AC23500F59201 /* CoinToolBarView.xib in Resources */,
 				9F6390E822DA1CA2000E1A76 /* Coins.plist in Resources */,
 				9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */,
+				9FCF89C7232AC46E00F59201 /* CoinCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,12 +574,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6390D222D9F020000E1A76 /* UITableView+Extension.swift in Sources */,
+				9FCF89C9232AC53A00F59201 /* UICollectionView+Extension.swift in Sources */,
 				9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */,
 				9F63918922DB6423000E1A76 /* OnlineRepository.swift in Sources */,
 				9F63918022DB3E62000E1A76 /* RequestType.swift in Sources */,
 				9F63919922E442DF000E1A76 /* Formatter+Extension.swift in Sources */,
 				9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */,
 				9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */,
+				9FCF89CB232AC55100F59201 /* UICollectionViewCell+Extension.swift in Sources */,
 				9F6391A222E4B027000E1A76 /* AddressTableViewCell.swift in Sources */,
 				9F6390CA22D9EFCA000E1A76 /* DashboardCell.swift in Sources */,
 				9F63918C22DC52CE000E1A76 /* CoinPricesResource.swift in Sources */,
@@ -567,6 +589,7 @@
 				9F6390CE22D9EFF8000E1A76 /* NibLoadableView.swift in Sources */,
 				9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */,
 				9F63919322E4382A000E1A76 /* LoadingView.swift in Sources */,
+				9FCF89C1232AC21600F59201 /* CoinToolBarView.swift in Sources */,
 				9F6390DD22D9FC44000E1A76 /* PoolInformation.swift in Sources */,
 				9F6390D622D9F731000E1A76 /* Constants.swift in Sources */,
 				9F63919022DEEC72000E1A76 /* UIViewController+Extension.swift in Sources */,
@@ -585,6 +608,7 @@
 				9F6390E622DA01C2000E1A76 /* DashboardCellViewModel.swift in Sources */,
 				9F63917E22DB3E58000E1A76 /* SessionManager.swift in Sources */,
 				9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */,
+				9FCF89C6232AC46E00F59201 /* CoinCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

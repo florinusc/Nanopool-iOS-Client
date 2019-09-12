@@ -53,6 +53,9 @@ class AddressListViewController: UIViewController {
         addView = AddressAddView.fromNib()
         addView?.frame = CGRect(x: addViewInitialX, y: addViewY, width: view.frame.width, height: addViewHeight)
         addView?.delegate = self
+        if let firstCoin = CoinDictionary.shared.getCoinDictionary().first?.key {
+            addView?.changeCoinImage(UIImage(named: "\(firstCoin)_icon"))
+        }
         guard let addView = addView else { return }
         view.addSubview(addView)
     }
@@ -73,6 +76,8 @@ extension AddressListViewController: AddressAddViewDelegate {
     func toggle(expanded: Bool) {
         shadowView.isHidden = !expanded
     }
+    
+    func changeCoin() {}
 }
 
 extension AddressListViewController: Storyboarded {

@@ -10,13 +10,14 @@ import UIKit
 
 protocol AddressAddViewDelegate: class {
     func toggle(expanded: Bool)
+    func changeCoin()
 }
 
 class AddressAddView: UIView, NibLoadableView {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var addButton: UIButton!
-    @IBOutlet private weak var addressTextFiled: UITextField!
+    @IBOutlet private weak var addressTextField: UITextField!
     @IBOutlet private weak var coinLogoImageView: UIImageView!
     
     // MARK: - Public variables
@@ -49,6 +50,9 @@ class AddressAddView: UIView, NibLoadableView {
     private func setup() {
         roundCorners([UIRectCorner.topLeft, UIRectCorner.bottomLeft], radius: self.frame.height / 2)
         addKeyboardObserver()
+        let coinToolBar = CoinToolBarView.fromNib()
+        coinToolBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 50.0)
+        addressTextField.inputAccessoryView = coinToolBar
     }
     
     private func addKeyboardObserver() {
@@ -105,11 +109,16 @@ class AddressAddView: UIView, NibLoadableView {
         }
         expanded = !expanded
         if expanded {
-            addressTextFiled.becomeFirstResponder()
+            addressTextField.becomeFirstResponder()
         } else {
-            addressTextFiled.resignFirstResponder()
+            addressTextField.resignFirstResponder()
         }
         delegate?.toggle(expanded: expanded)
+    }
+    
+    // MARK: - Public helpers
+    func changeCoinImage(_ image: UIImage?) {
+        coinLogoImageView.image = image
     }
     
     // MARK: - IBActions
@@ -118,6 +127,7 @@ class AddressAddView: UIView, NibLoadableView {
     }
     
     @IBAction func onTapOnCoinLogo(_ sender: Any) {
-        print("tapped on logo")
+        addressTextField.resignFirstResponder()
+        delegate?.changeCoin()
     }
 }

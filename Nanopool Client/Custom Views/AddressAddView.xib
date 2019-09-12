@@ -75,7 +75,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="addButton" destination="FYp-lZ-3Yw" id="tmM-FZ-3W6"/>
-                <outlet property="addressTextFiled" destination="O5T-AP-TQT" id="OTF-49-kxp"/>
+                <outlet property="addressTextField" destination="O5T-AP-TQT" id="OTF-49-kxp"/>
                 <outlet property="coinLogoImageView" destination="Efj-bJ-EgW" id="n5Q-6B-jB3"/>
             </connections>
             <point key="canvasLocation" x="87.681159420289859" y="145.98214285714286"/>
