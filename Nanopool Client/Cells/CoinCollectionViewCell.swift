@@ -12,5 +12,9 @@ class CoinCollectionViewCell: UICollectionViewCell {
 
     // MARK: - IBOutlets
     @IBOutlet private weak var imageView: UIImageView!
-
+    
+    // MARK: - Setup
+    func setup(with viewModel: CoinCellViewModel) {
+        imageView.image = UIImage(named: viewModel.imagePath)
+    }
 }

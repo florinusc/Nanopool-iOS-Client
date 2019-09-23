@@ -55,6 +55,9 @@
 		9FCF89C7232AC46E00F59201 /* CoinCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF89C5232AC46E00F59201 /* CoinCollectionViewCell.xib */; };
 		9FCF89C9232AC53A00F59201 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89C8232AC53A00F59201 /* UICollectionView+Extension.swift */; };
 		9FCF89CB232AC55100F59201 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89CA232AC55100F59201 /* UICollectionViewCell+Extension.swift */; };
+		9FD906C92339437200BA3B06 /* CoinToolBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD906C82339437200BA3B06 /* CoinToolBarViewModel.swift */; };
+		9FD906CB233943D600BA3B06 /* CoinCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD906CA233943D600BA3B06 /* CoinCellViewModel.swift */; };
+		9FD906CD2339443300BA3B06 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD906CC2339443300BA3B06 /* Coin.swift */; };
 		F7394DEC896A5C67823A9B31 /* Pods_Nanopool_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E217D501E6E1DE4E27E25 /* Pods_Nanopool_Client.framework */; };
 		F85654BFE21A20760258440E /* Pods_Nanopool_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */; };
 /* End PBXBuildFile section */
@@ -126,6 +129,9 @@
 		9FCF89C5232AC46E00F59201 /* CoinCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCollectionViewCell.xib; sourceTree = "<group>"; };
 		9FCF89C8232AC53A00F59201 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		9FCF89CA232AC55100F59201 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		9FD906C82339437200BA3B06 /* CoinToolBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinToolBarViewModel.swift; sourceTree = "<group>"; };
+		9FD906CA233943D600BA3B06 /* CoinCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellViewModel.swift; sourceTree = "<group>"; };
+		9FD906CC2339443300BA3B06 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		ACE4206AC3146D81AC7F484E /* Pods-Nanopool Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CDA2841114D4C8FE94F38F /* Pods-Nanopool Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -229,6 +235,7 @@
 		9F6390B622D70859000E1A76 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9FD906C72339436600BA3B06 /* Views */,
 				9F6390E422DA01B7000E1A76 /* Cells */,
 				9F6390C522D9E543000E1A76 /* ViewControllers */,
 			);
@@ -239,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6390DC22D9FC44000E1A76 /* PoolInformation.swift */,
+				9FD906CC2339443300BA3B06 /* Coin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */,
+				9FD906CA233943D600BA3B06 /* CoinCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -380,6 +389,14 @@
 				9FCF89C2232AC23500F59201 /* CoinToolBarView.xib */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		9FD906C72339436600BA3B06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FD906C82339437200BA3B06 /* CoinToolBarViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -594,9 +611,12 @@
 				9F6390D622D9F731000E1A76 /* Constants.swift in Sources */,
 				9F63919022DEEC72000E1A76 /* UIViewController+Extension.swift in Sources */,
 				9F6390D422D9F02C000E1A76 /* UITableViewCell+Extension.swift in Sources */,
+				9FD906CD2339443300BA3B06 /* Coin.swift in Sources */,
 				9F63918E22DDA68A000E1A76 /* CoinDictionary.swift in Sources */,
+				9FD906C92339437200BA3B06 /* CoinToolBarViewModel.swift in Sources */,
 				9F6390E122D9FD0E000E1A76 /* MockRepository.swift in Sources */,
 				9F6390D822D9F765000E1A76 /* UIFont+Extension.swift in Sources */,
+				9FD906CB233943D600BA3B06 /* CoinCellViewModel.swift in Sources */,
 				9F63919B22E44317000E1A76 /* Int+Extension.swift in Sources */,
 				9F63919F22E4AEDF000E1A76 /* AddressListViewController.swift in Sources */,
 				9F6390DF22D9FC73000E1A76 /* Repository.swift in Sources */,

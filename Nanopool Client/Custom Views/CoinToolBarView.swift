@@ -13,6 +13,9 @@ class CoinToolBarView: UIView, NibLoadableView {
     // MARK: - IBOutlets
     @IBOutlet private weak var collectionView: UICollectionView!
     
+    // MARK: - Public variables
+    var viewModel: CoinToolBarViewModel!
+    
     // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,12 +32,14 @@ class CoinToolBarView: UIView, NibLoadableView {
 
 extension CoinToolBarView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return viewModel.numberOfCoins
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CoinCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
-        cell.backgroundColor = .red
+        if let cellViewModel = viewModel.coinCellViewModel(at: indexPath) {
+            cell.setup(with: cellViewModel)
+        }
         return cell
     }
 }
