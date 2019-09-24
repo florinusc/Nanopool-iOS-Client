@@ -16,5 +16,8 @@ class CoinCollectionViewCell: UICollectionViewCell {
     // MARK: - Setup
     func setup(with viewModel: CoinCellViewModel) {
         imageView.image = UIImage(named: viewModel.imagePath)
+        self.borderWidth = 1.0
+        self.borderColor = .black
+        self.cornerRadius = self.height / 2
     }
 }

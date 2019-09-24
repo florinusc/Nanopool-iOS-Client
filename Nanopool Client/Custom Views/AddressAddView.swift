@@ -52,7 +52,7 @@ class AddressAddView: UIView, NibLoadableView {
         addKeyboardObserver()
         let coinToolBar = CoinToolBarView.fromNib()
         coinToolBar.viewModel = CoinToolBarViewModel()
-        coinToolBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 50.0)
+        coinToolBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 60.0)
         addressTextField.inputAccessoryView = coinToolBar
     }
     

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,15 +18,15 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-QG-vB3">
-                        <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                        <rect key="frame" x="10" y="10" width="60" height="50"/>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Lvh-QG-vB3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CLG-se-8qU"/>
-                <constraint firstAttribute="trailing" secondItem="Lvh-QG-vB3" secondAttribute="trailing" id="QhF-RY-0rh"/>
-                <constraint firstAttribute="bottom" secondItem="Lvh-QG-vB3" secondAttribute="bottom" id="UWZ-bO-Qeb"/>
-                <constraint firstItem="Lvh-QG-vB3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x1V-JX-R2Z"/>
+                <constraint firstItem="Lvh-QG-vB3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="CLG-se-8qU"/>
+                <constraint firstAttribute="trailing" secondItem="Lvh-QG-vB3" secondAttribute="trailing" constant="10" id="QhF-RY-0rh"/>
+                <constraint firstAttribute="bottom" secondItem="Lvh-QG-vB3" secondAttribute="bottom" constant="10" id="UWZ-bO-Qeb"/>
+                <constraint firstItem="Lvh-QG-vB3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="x1V-JX-R2Z"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="80" height="70"/>
