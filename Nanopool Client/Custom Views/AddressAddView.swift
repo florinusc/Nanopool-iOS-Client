@@ -21,6 +21,11 @@ class AddressAddView: UIView, NibLoadableView {
     @IBOutlet private weak var coinLogoImageView: UIImageView!
     
     // MARK: - Public variables
+    var viewModel: AddressAddViewModel! {
+        didSet {
+            setup(with: viewModel)
+        }
+    }
     weak var delegate: AddressAddViewDelegate?
     
     // MARK: - Private variables
@@ -50,10 +55,16 @@ class AddressAddView: UIView, NibLoadableView {
     private func setup() {
         roundCorners([UIRectCorner.topLeft, UIRectCorner.bottomLeft], radius: self.frame.height / 2)
         addKeyboardObserver()
+    }
+    
+    private func setup(with viewModel: AddressAddViewModel) {
         let coinToolBar = CoinToolBarView.fromNib()
-        coinToolBar.viewModel = CoinToolBarViewModel()
+        coinToolBar.viewModel = viewModel.coinToolBarViewModel
         coinToolBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 60.0)
         addressTextField.inputAccessoryView = coinToolBar
+        if let firstCoinLogo = viewModel.coinLogo(at: 0) {
+            coinLogoImageView.image = UIImage(named: firstCoinLogo)
+        }
     }
     
     private func addKeyboardObserver() {
@@ -117,18 +128,8 @@ class AddressAddView: UIView, NibLoadableView {
         delegate?.toggle(expanded: expanded)
     }
     
-    // MARK: - Public helpers
-    func changeCoinImage(_ image: UIImage?) {
-        coinLogoImageView.image = image
-    }
-    
     // MARK: - IBActions
     @IBAction private func onAddTapped(_ sender: UIButton) {
         toggle()
-    }
-    
-    @IBAction func onTapOnCoinLogo(_ sender: Any) {
-        addressTextField.resignFirstResponder()
-        delegate?.changeCoin()
     }
 }

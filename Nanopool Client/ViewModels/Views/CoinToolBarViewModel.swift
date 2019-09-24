@@ -19,20 +19,8 @@ class CoinToolBarViewModel {
     private var coins = [Coin]()
     
     // MARK: - Lifecycle
-    init() {
-        setup()
-    }
-    
-    // MARK: - Setup
-    private func setup() {
-        getCoins()
-    }
-    
-    // MARK: - Private helpers
-    private func getCoins() {
-        coins = CoinDictionary.shared.getCoinDictionary().map { (coin) -> Coin in
-            return Coin(id: coin.key, name: coin.value, image: "\(coin.key)_icon")
-        }
+    init(coins: [Coin]) {
+        self.coins = coins
     }
     
     // MARK: - Public helpers

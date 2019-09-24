@@ -12,12 +12,36 @@ class CoinCollectionViewCell: UICollectionViewCell {
 
     // MARK: - IBOutlets
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var shadowBackground: UIView!
+    
+    // MARK: - Public variables
+    override var isSelected: Bool {
+        didSet {
+            isSelected ? showShadow() : showBorder()
+        }
+    }
     
     // MARK: - Setup
     func setup(with viewModel: CoinCellViewModel) {
         imageView.image = UIImage(named: viewModel.imagePath)
-        self.borderWidth = 1.0
-        self.borderColor = .black
-        self.cornerRadius = self.height / 2
+        borderWidth = 1.0
+        borderColor = .black
+        cornerRadius = self.height / 2
+        shadowBackground.isHidden = true
+        clipsToBounds = false
+        shadowBackground.clipsToBounds = false
+    }
+    
+    // MARK: - Private helpers
+    private func showShadow() {
+        shadowBackground.isHidden = false
+        borderWidth = 0.0
+        borderColor = .clear
+    }
+    
+    private func showBorder() {
+        shadowBackground.isHidden = true
+        borderWidth = 1.0
+        borderColor = .black
     }
 }

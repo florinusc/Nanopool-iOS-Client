@@ -30,6 +30,7 @@ class AddressListViewController: UIViewController {
         }
         return 0.0
     }
+    private var coins = [Coin]()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -39,6 +40,7 @@ class AddressListViewController: UIViewController {
     
     // MARK: - Setup
     private func setup() {
+        getCoins()
         setupTableView()
         setupAddView()
     }
@@ -52,12 +54,17 @@ class AddressListViewController: UIViewController {
     private func setupAddView() {
         addView = AddressAddView.fromNib()
         addView?.frame = CGRect(x: addViewInitialX, y: addViewY, width: view.frame.width, height: addViewHeight)
+        addView?.viewModel = AddressAddViewModel(coins: coins)
         addView?.delegate = self
-        if let firstCoin = CoinDictionary.shared.getCoinDictionary().first?.key {
-            addView?.changeCoinImage(UIImage(named: "\(firstCoin)_icon"))
-        }
         guard let addView = addView else { return }
         view.addSubview(addView)
+    }
+    
+    // MARK: - Private helpers
+    private func getCoins() {
+        coins = CoinDictionary.shared.getCoinDictionary().map { (coin) -> Coin in
+            return Coin(id: coin.key, name: coin.value, image: "\(coin.key)_icon")
+        }
     }
 }
 
