@@ -62,9 +62,7 @@ class AddressListViewController: UIViewController {
     
     // MARK: - Private helpers
     private func getCoins() {
-        coins = CoinDictionary.shared.getCoinDictionary().map { (coin) -> Coin in
-            return Coin(id: coin.key, name: coin.value, image: "\(coin.key)_icon")
-        }
+        coins = CoinDictionary.shared.getCoins()
     }
 }
 

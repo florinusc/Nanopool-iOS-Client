@@ -17,8 +17,7 @@ class DashboardViewModel: ViewModel {
     // MARK: - Private variables
     private var poolInformationArray = [PoolInformation]()
     private var coins: [String] {
-        let coinDictionary = CoinDictionary.shared.getCoinDictionary()
-        return Array(coinDictionary.keys)
+        return CoinDictionary.shared.getCoins().map({ $0.id })
     }
     
     // MARK: - Public variables

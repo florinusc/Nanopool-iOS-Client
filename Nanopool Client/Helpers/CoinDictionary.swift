@@ -12,11 +12,15 @@ class CoinDictionary {
     
     static let shared = CoinDictionary()
     
-    func getCoinDictionary() -> [String: String] {
-        var dict = [String: String]()
+    func getCoins() -> [Coin] {
         if let path = Bundle.main.path(forResource: "Coins", ofType: "plist") {
-            dict = NSDictionary(contentsOfFile: path) as! [String : String]
+            return NSDictionary(contentsOfFile: path)?.compactMap({ (arg) -> Coin? in
+                if let coinId = arg.key as? String, let coinName = arg.value as? String {
+                    return Coin(id: coinId, name: coinName, image: "\(coinId)_icon")
+                }
+                return nil
+            }) ?? []
         }
-        return dict
+        return []
     }
 }

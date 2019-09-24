@@ -12,8 +12,8 @@ struct DashboardCellViewModel {
     let poolInformation: PoolInformation
     
     var coinName: String? {
-        let coinDictionary = CoinDictionary.shared.getCoinDictionary()
-        return coinDictionary[poolInformation.coin]
+        let coins = CoinDictionary.shared.getCoins()
+        return coins.first(where: { $0.id == poolInformation.coin })?.name
     }
     
     var hashrateString: String {
