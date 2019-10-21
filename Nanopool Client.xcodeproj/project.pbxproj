@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F456AE9235D90DA0037DCBC /* AddressListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456AE8235D90DA0037DCBC /* AddressListViewModel.swift */; };
 		9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909422D707C0000E1A76 /* AppDelegate.swift */; };
 		9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909622D707C0000E1A76 /* DashboardViewController.swift */; };
 		9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909822D707C0000E1A76 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		64826396A9CC3D459901CC52 /* Pods-Nanopool ClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool ClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool ClientTests/Pods-Nanopool ClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nanopool_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9B31548A358B731532C4FA /* Pods-Nanopool ClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool ClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool ClientTests/Pods-Nanopool ClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F456AE8235D90DA0037DCBC /* AddressListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewModel.swift; sourceTree = "<group>"; };
 		9F63909122D707C0000E1A76 /* Nanopool Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nanopool Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F63909422D707C0000E1A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F63909622D707C0000E1A76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				9F63909622D707C0000E1A76 /* DashboardViewController.swift */,
 				9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */,
 				9F63919E22E4AEDF000E1A76 /* AddressListViewController.swift */,
+				9F456AE8235D90DA0037DCBC /* AddressListViewModel.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				9FD906CD2339443300BA3B06 /* Coin.swift in Sources */,
 				9F63918E22DDA68A000E1A76 /* CoinDictionary.swift in Sources */,
 				9FD906C92339437200BA3B06 /* CoinToolBarViewModel.swift in Sources */,
+				9F456AE9235D90DA0037DCBC /* AddressListViewModel.swift in Sources */,
 				9F6390E122D9FD0E000E1A76 /* MockRepository.swift in Sources */,
 				9F6390D822D9F765000E1A76 /* UIFont+Extension.swift in Sources */,
 				9FD906CB233943D600BA3B06 /* CoinCellViewModel.swift in Sources */,

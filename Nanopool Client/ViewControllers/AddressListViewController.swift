@@ -9,7 +9,7 @@
 import UIKit
 import SwifterSwift
 
-class AddressListViewController: UIViewController {
+class AddressListViewController: UIViewController, ViewModelBased {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var tableView: UITableView!
@@ -18,6 +18,9 @@ class AddressListViewController: UIViewController {
     // MARK: - Private constants
     private let estimatedRowHeight: CGFloat = 70.0
     private let addViewHeight: CGFloat = 70.0
+    
+    // MARK: - Public variables
+    var viewModel: AddressListViewModel!
     
     // MARK: - Private variables
     private var addView: AddressAddView?
@@ -30,7 +33,6 @@ class AddressListViewController: UIViewController {
         }
         return 0.0
     }
-    private var coins = [Coin]()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -40,7 +42,6 @@ class AddressListViewController: UIViewController {
     
     // MARK: - Setup
     private func setup() {
-        getCoins()
         setupTableView()
         setupAddView()
     }
@@ -54,15 +55,10 @@ class AddressListViewController: UIViewController {
     private func setupAddView() {
         addView = AddressAddView.fromNib()
         addView?.frame = CGRect(x: addViewInitialX, y: addViewY, width: view.frame.width, height: addViewHeight)
-        addView?.viewModel = AddressAddViewModel(coins: coins)
+        addView?.viewModel = viewModel.addressAddViewModel
         addView?.delegate = self
         guard let addView = addView else { return }
         view.addSubview(addView)
-    }
-    
-    // MARK: - Private helpers
-    private func getCoins() {
-        coins = CoinDictionary.shared.getCoins()
     }
 }
 
