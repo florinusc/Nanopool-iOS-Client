@@ -21,9 +21,6 @@
                         <constraint firstAttribute="width" constant="50" id="B5T-St-v0b"/>
                         <constraint firstAttribute="height" constant="50" id="Trv-ea-76P"/>
                     </constraints>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="fgh-4g-bIs" appends="YES" id="LcH-Ls-KvD"/>
-                    </connections>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type address here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5T-AP-TQT">
                     <rect key="frame" x="75" y="26.5" width="256" height="17"/>
@@ -77,12 +74,6 @@
             </connections>
             <point key="canvasLocation" x="87.681159420289859" y="145.98214285714286"/>
         </view>
-        <tapGestureRecognizer id="fgh-4g-bIs">
-            <connections>
-                <action selector="onTapOnCoinLogo:" destination="iN0-l3-epB" id="3rA-JK-GXa"/>
-                <outlet property="delegate" destination="iN0-l3-epB" id="HG0-1I-h0S"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="addIcon" width="48" height="48"/>

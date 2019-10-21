@@ -10,4 +10,9 @@ import Foundation
 
 struct CoinCellViewModel {
     let imagePath: String
+    let name: String
+    
+    static func from(_ coin: Coin) -> CoinCellViewModel {
+        return CoinCellViewModel(imagePath: coin.image, name: coin.id.uppercased())
+    }
 }

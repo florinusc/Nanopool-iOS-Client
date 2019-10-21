@@ -199,7 +199,6 @@
 				9F6390BB22D70891000E1A76 /* Helpers */,
 				9F6390B922D70875000E1A76 /* Resources */,
 				9F6390B822D7086D000E1A76 /* Cells */,
-				9F6390B622D70859000E1A76 /* ViewModels */,
 				9F6390B522D70852000E1A76 /* ViewControllers */,
 				9F6390B422D7083E000E1A76 /* Project FIles */,
 			);
@@ -229,19 +228,10 @@
 			children = (
 				9F6390C622D9E563000E1A76 /* TabBarViewController.swift */,
 				9F63909622D707C0000E1A76 /* DashboardViewController.swift */,
+				9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */,
 				9F63919E22E4AEDF000E1A76 /* AddressListViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		9F6390B622D70859000E1A76 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				9FD906C72339436600BA3B06 /* Views */,
-				9F6390E422DA01B7000E1A76 /* Cells */,
-				9F6390C522D9E543000E1A76 /* ViewControllers */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		9F6390B722D70863000E1A76 /* Models */ = {
@@ -257,10 +247,12 @@
 			isa = PBXGroup;
 			children = (
 				9F6390C822D9EFCA000E1A76 /* DashboardCell.swift */,
+				9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */,
 				9F6390C922D9EFCA000E1A76 /* DashboardCell.xib */,
 				9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */,
 				9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */,
 				9FCF89C4232AC46E00F59201 /* CoinCollectionViewCell.swift */,
+				9FD906CA233943D600BA3B06 /* CoinCellViewModel.swift */,
 				9FCF89C5232AC46E00F59201 /* CoinCollectionViewCell.xib */,
 			);
 			path = Cells;
@@ -310,14 +302,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		9F6390C522D9E543000E1A76 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				9F6390C322D9E503000E1A76 /* DashboardViewModel.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		9F6390CC22D9EFDF000E1A76 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,15 +338,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		9F6390E422DA01B7000E1A76 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */,
-				9FD906CA233943D600BA3B06 /* CoinCellViewModel.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		9F6390E922DB099C000E1A76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,20 +361,13 @@
 				9F63919222E4382A000E1A76 /* LoadingView.swift */,
 				9F63919422E43838000E1A76 /* LoadingView.xib */,
 				9F6391A622E580D4000E1A76 /* AddressAddView.swift */,
+				9FD906CE2339E65500BA3B06 /* AddressAddViewModel.swift */,
 				9F6391A422E580C2000E1A76 /* AddressAddView.xib */,
 				9FCF89C0232AC21600F59201 /* CoinToolBarView.swift */,
+				9FD906C82339437200BA3B06 /* CoinToolBarViewModel.swift */,
 				9FCF89C2232AC23500F59201 /* CoinToolBarView.xib */,
 			);
 			path = "Custom Views";
-			sourceTree = "<group>";
-		};
-		9FD906C72339436600BA3B06 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9FD906C82339437200BA3B06 /* CoinToolBarViewModel.swift */,
-				9FD906CE2339E65500BA3B06 /* AddressAddViewModel.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,30 +484,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nanopool Client/Pods-Nanopool Client-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		61469E5001CE89640D1872D9 /* [CP] Check Pods Manifest.lock */ = {

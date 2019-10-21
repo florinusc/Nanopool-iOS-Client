@@ -62,9 +62,7 @@ class AddressAddView: UIView, NibLoadableView {
         coinToolBar.viewModel = viewModel.coinToolBarViewModel
         coinToolBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 60.0)
         addressTextField.inputAccessoryView = coinToolBar
-        if let firstCoinLogo = viewModel.coinLogo(at: 0) {
-            coinLogoImageView.image = UIImage(named: firstCoinLogo)
-        }
+        viewModel.selectedCoinImage.map { UIImage(named: $0 ?? "") }.bind(to: coinLogoImageView.reactive.image)
     }
     
     private func addKeyboardObserver() {

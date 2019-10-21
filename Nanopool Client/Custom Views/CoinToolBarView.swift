@@ -14,7 +14,12 @@ class CoinToolBarView: UIView, NibLoadableView {
     @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: - Public variables
-    var viewModel: CoinToolBarViewModel!
+    var viewModel: CoinToolBarViewModel! {
+        didSet {
+            collectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: .left)
+            viewModel.selectedCoin(at: 0)
+        }
+    }
     
     // MARK: - Lifecycle
     override func awakeFromNib() {
@@ -41,6 +46,10 @@ extension CoinToolBarView: UICollectionViewDelegate, UICollectionViewDataSource 
             cell.setup(with: cellViewModel)
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.selectedCoin(at: indexPath.item)
     }
 }
 

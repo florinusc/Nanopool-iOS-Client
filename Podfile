@@ -10,6 +10,7 @@ target 'Nanopool Client' do
   pod 'SwiftyJSON', '~> 4.0'
   pod "PromiseKit", "~> 6.8"
   pod 'SwifterSwift'
+  pod 'Bond'
 
   target 'Nanopool ClientTests' do
     inherit! :search_paths
