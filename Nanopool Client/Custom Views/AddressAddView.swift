@@ -29,16 +29,15 @@ class AddressAddView: UIView, NibLoadableView {
     
     // MARK: - Private variables
     private var expanded = false
-    private lazy var expandedX: CGFloat = {
-        return UIScreen.main.bounds.width - 70.0
-    }()
-    private lazy var initialYPosition: CGFloat = {
-        return frame.origin.y
-    }()
+    private lazy var expandedX: CGFloat = { return UIScreen.main.bounds.width - 70.0 }()
+    private lazy var initialYPosition: CGFloat = { return frame.origin.y }()
     
     // MARK: - Private constants
     private let retractedX: CGFloat = 10.0
     private let animationDuration = 0.5
+    private let coinToolBarHeight: CGFloat = 60.0
+    private let xOffset: CGFloat = 70.0
+    private let yOffset: CGFloat = 70.0
     
     // MARK: - Lifecycle
     override func awakeFromNib() {
@@ -60,7 +59,7 @@ class AddressAddView: UIView, NibLoadableView {
     private func setup(with viewModel: AddressAddViewModel) {
         let coinToolBar = CoinToolBarView.fromNib()
         coinToolBar.viewModel = viewModel.coinToolBarViewModel
-        coinToolBar.frame = CGRect(x: 0, y: 0, width: frame.width, height: 60.0)
+        coinToolBar.frame = CGRect(x: 0, y: 0, width: frame.width, height: coinToolBarHeight)
         addressTextField.delegate = self
         addressTextField.inputAccessoryView = coinToolBar
         viewModel.selectedCoinImage.map { UIImage(named: $0 ?? "") }.bind(to: coinLogoImageView.reactive.image)
@@ -90,7 +89,7 @@ class AddressAddView: UIView, NibLoadableView {
             let keyboardRectangle = keyboardFrame.cgRectValue
             let keyboardHeight = keyboardRectangle.height
             
-            let newY = initialYPosition - keyboardHeight + 70.0
+            let newY = initialYPosition - keyboardHeight + yOffset
             let newFrame = CGRect(x: frame.origin.x, y: newY, width: frame.width, height: frame.height)
             UIView.animate(withDuration: animationDuration) { [weak self] in
                 guard let self = self else { return }
