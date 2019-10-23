@@ -54,12 +54,13 @@ class AddressAddView: UIView, NibLoadableView {
     private func setup() {
         roundCorners([UIRectCorner.topLeft, UIRectCorner.bottomLeft], radius: self.frame.height / 2)
         addKeyboardObserver()
+        addressTextField.enablesReturnKeyAutomatically = true
     }
     
     private func setup(with viewModel: AddressAddViewModel) {
         let coinToolBar = CoinToolBarView.fromNib()
         coinToolBar.viewModel = viewModel.coinToolBarViewModel
-        coinToolBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 60.0)
+        coinToolBar.frame = CGRect(x: 0, y: 0, width: frame.width, height: 60.0)
         addressTextField.delegate = self
         addressTextField.inputAccessoryView = coinToolBar
         viewModel.selectedCoinImage.map { UIImage(named: $0 ?? "") }.bind(to: coinLogoImageView.reactive.image)
@@ -135,7 +136,7 @@ class AddressAddView: UIView, NibLoadableView {
 
 extension AddressAddView: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        guard let address = textField.text, address != "" else { return true }
+        guard let address = textField.text, address != "" else { return false }
         viewModel.validateAddress(address: address) { [weak self] (error) in
             guard let self = self else { return }
             if let error = error {
