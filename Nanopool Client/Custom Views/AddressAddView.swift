@@ -29,7 +29,7 @@ class AddressAddView: UIView, NibLoadableView {
     
     // MARK: - Private variables
     private var expanded = false
-    private lazy var expandedX: CGFloat = { return UIScreen.main.bounds.width - 70.0 }()
+    private lazy var expandedX: CGFloat = { return UIScreen.main.bounds.width - xOffset }()
     private lazy var initialYPosition: CGFloat = { return frame.origin.y }()
     
     // MARK: - Private constants
@@ -127,6 +127,17 @@ class AddressAddView: UIView, NibLoadableView {
         delegate?.toggle(expanded: expanded)
     }
     
+    private func validateAddress(_ address: String) {
+        viewModel.validateAddress(address: address) { [weak self] (error) in
+            guard let self = self else { return }
+            if let error = error {
+                self.delegate?.presentAlert(for: error)
+                return
+            }
+            self.delegate?.presentAlert(for: nil)
+        }
+    }
+    
     // MARK: - IBActions
     @IBAction private func onAddTapped(_ sender: UIButton) {
         toggle()
@@ -136,14 +147,7 @@ class AddressAddView: UIView, NibLoadableView {
 extension AddressAddView: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard let address = textField.text, address != "" else { return false }
-        viewModel.validateAddress(address: address) { [weak self] (error) in
-            guard let self = self else { return }
-            if let error = error {
-                self.delegate?.presentAlert(for: error)
-                return
-            }
-            self.delegate?.presentAlert(for: nil)
-        }
+        validateAddress(address)
         return true
     }
 }
