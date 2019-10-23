@@ -10,4 +10,5 @@ import Foundation
 
 protocol Repository {
     func getPoolInformation(for coin: String, completion block: @escaping (Result<PoolInformation, Error>) -> Void)
+    func getGeneralInfo(forCoin coin: String, andAddress address: String, completion block: @escaping (Error?) -> Void)
 }

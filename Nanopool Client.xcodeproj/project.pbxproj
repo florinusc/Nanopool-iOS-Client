@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F456AE9235D90DA0037DCBC /* AddressListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456AE8235D90DA0037DCBC /* AddressListViewModel.swift */; };
+		9F456AEB2360B4670037DCBC /* NanoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456AEA2360B4670037DCBC /* NanoError.swift */; };
 		9F63909522D707C0000E1A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909422D707C0000E1A76 /* AppDelegate.swift */; };
 		9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63909622D707C0000E1A76 /* DashboardViewController.swift */; };
 		9F63909A22D707C0000E1A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F63909822D707C0000E1A76 /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		7AC242D6445888D9BB977867 /* Pods_Nanopool_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nanopool_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9B31548A358B731532C4FA /* Pods-Nanopool ClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nanopool ClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nanopool ClientTests/Pods-Nanopool ClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F456AE8235D90DA0037DCBC /* AddressListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewModel.swift; sourceTree = "<group>"; };
+		9F456AEA2360B4670037DCBC /* NanoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoError.swift; sourceTree = "<group>"; };
 		9F63909122D707C0000E1A76 /* Nanopool Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nanopool Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F63909422D707C0000E1A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F63909622D707C0000E1A76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				9F6390DC22D9FC44000E1A76 /* PoolInformation.swift */,
 				9FD906CC2339443300BA3B06 /* Coin.swift */,
+				9F456AEA2360B4670037DCBC /* NanoError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				9FCF89C9232AC53A00F59201 /* UICollectionView+Extension.swift in Sources */,
 				9F63909722D707C0000E1A76 /* DashboardViewController.swift in Sources */,
 				9F63918922DB6423000E1A76 /* OnlineRepository.swift in Sources */,
+				9F456AEB2360B4670037DCBC /* NanoError.swift in Sources */,
 				9F63918022DB3E62000E1A76 /* RequestType.swift in Sources */,
 				9F63919922E442DF000E1A76 /* Formatter+Extension.swift in Sources */,
 				9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */,

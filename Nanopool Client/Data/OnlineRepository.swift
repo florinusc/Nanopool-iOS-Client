@@ -86,4 +86,14 @@ class OnlineRepository: Repository {
             block(Swift.Result.failure(error))
         }
     }
+    
+    func getGeneralInfo(forCoin coin: String, andAddress address: String, completion block: @escaping (Error?) -> Void) {
+        firstly {
+            SessionManager.shared.request(.generalInfo(coin: coin, address: address))
+        }.done { (json) in
+            block(NanoError(json: json))
+        }.catch { (error) in
+            block(error)
+        }
+    }
 }

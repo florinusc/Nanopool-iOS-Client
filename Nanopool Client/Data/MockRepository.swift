@@ -23,4 +23,12 @@ class MockRepository: Repository {
         }
         block(Result.success(PoolInformation(coin: coin, hashrate: 583434, price: 205, minerCount: 345354)))
     }
+    
+    func getGeneralInfo(forCoin coin: String, andAddress address: String, completion block: @escaping (Error?) -> Void) {
+        if shouldReturnError {
+            block(CustomError.network)
+            return
+        }
+        block(nil)
+    }
 }

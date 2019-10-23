@@ -10,16 +10,20 @@ import Foundation
 
 class AddressListViewModel: ViewModel {
     
+    // MARK: - Private constants
+    private let repository: Repository!
+    
     // MARK: - Public variables
     var addressAddViewModel: AddressAddViewModel {
-        return AddressAddViewModel(coins: coins)
+        return AddressAddViewModel(coins: coins, repository: repository)
     }
     
     // MARK: - Private variables
     private var coins = [Coin]()
     
     // MARK: - Lifecycle
-    init() {
+    init(repository: Repository) {
+        self.repository = repository
         getCoins()
     }
     

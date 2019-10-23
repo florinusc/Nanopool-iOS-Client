@@ -11,6 +11,7 @@ import UIKit
 protocol AddressAddViewDelegate: class {
     func toggle(expanded: Bool)
     func changeCoin()
+    func presentAlert(for error: Error?)
 }
 
 class AddressAddView: UIView, NibLoadableView {
@@ -22,9 +23,7 @@ class AddressAddView: UIView, NibLoadableView {
     
     // MARK: - Public variables
     var viewModel: AddressAddViewModel! {
-        didSet {
-            setup(with: viewModel)
-        }
+        didSet { setup(with: viewModel) }
     }
     weak var delegate: AddressAddViewDelegate?
     
@@ -61,6 +60,7 @@ class AddressAddView: UIView, NibLoadableView {
         let coinToolBar = CoinToolBarView.fromNib()
         coinToolBar.viewModel = viewModel.coinToolBarViewModel
         coinToolBar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 60.0)
+        addressTextField.delegate = self
         addressTextField.inputAccessoryView = coinToolBar
         viewModel.selectedCoinImage.map { UIImage(named: $0 ?? "") }.bind(to: coinLogoImageView.reactive.image)
     }
@@ -121,6 +121,7 @@ class AddressAddView: UIView, NibLoadableView {
         if expanded {
             addressTextField.becomeFirstResponder()
         } else {
+            addressTextField.text = ""
             addressTextField.resignFirstResponder()
         }
         delegate?.toggle(expanded: expanded)
@@ -129,5 +130,20 @@ class AddressAddView: UIView, NibLoadableView {
     // MARK: - IBActions
     @IBAction private func onAddTapped(_ sender: UIButton) {
         toggle()
+    }
+}
+
+extension AddressAddView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let address = textField.text, address != "" else { return true }
+        viewModel.validateAddress(address: address) { [weak self] (error) in
+            guard let self = self else { return }
+            if let error = error {
+                self.delegate?.presentAlert(for: error)
+                return
+            }
+            self.delegate?.presentAlert(for: nil)
+        }
+        return true
     }
 }

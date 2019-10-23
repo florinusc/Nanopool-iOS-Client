@@ -13,6 +13,7 @@ enum RequestType {
     case poolHashrate(coin: String)
     case numberOfMiners(coin: String)
     case prices(coin: String)
+    case generalInfo(coin: String, address: String)
 }
 
 extension RequestType: TargetType {
@@ -26,6 +27,7 @@ extension RequestType: TargetType {
         case .poolHashrate(let coin): return "\(coin)/pool/hashrate"
         case .numberOfMiners(let coin): return "\(coin)/pool/activeminers"
         case .prices(let coin): return "\(coin)/prices"
+        case .generalInfo(let coin, let address): return "\(coin)/user/\(address)"
         }
     }
     

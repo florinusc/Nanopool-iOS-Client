@@ -23,7 +23,7 @@ class TabBarViewController: UITabBarController {
     private func setup() {
         let dashboardViewController = DashboardViewController.instantiate(with: DashboardViewModel(repository: repository))
         dashboardViewController.tabBarItem = UITabBarItem(title: "Dashboard", image: UIImage(named: "dashboard"), tag: 0)
-        let addressViewController = AddressListViewController.getInstance()
+        let addressViewController = AddressListViewController.instantiate(with: AddressListViewModel(repository: repository))
         addressViewController.tabBarItem = UITabBarItem(title: "Address", image: UIImage(named: "plus"), tag: 1)
         viewControllers = [dashboardViewController, addressViewController]
     }

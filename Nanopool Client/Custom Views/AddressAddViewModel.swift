@@ -14,6 +14,7 @@ class AddressAddViewModel {
     // MARK: - Private constants
     private let coins: [Coin]
     private let selectedCoin: Observable<Coin>
+    private let repository: Repository!
     
     // MARK: - Public variables
     var coinToolBarViewModel: CoinToolBarViewModel {
@@ -22,7 +23,8 @@ class AddressAddViewModel {
     private(set) var selectedCoinImage = Observable<String?>(nil)
     
     // MARK: - Lifecycle
-    init(coins: [Coin]) {
+    init(coins: [Coin], repository: Repository) {
+        self.repository = repository
         self.coins = coins
         selectedCoin = Observable<Coin>(coins[0])
         selectedCoin.map { $0.image }.bind(to: selectedCoinImage)
@@ -32,6 +34,15 @@ class AddressAddViewModel {
     func coinLogo(at index: UInt) -> String? {
         guard index < coins.count else { return nil }
         return coins[Int(index)].image
+    }
+    
+    func validateAddress(address: String, completion block: @escaping (Error?) -> Void) {
+        repository.getGeneralInfo(forCoin: selectedCoin.value.id, andAddress: address) { (error) in
+            if error == nil {
+                // save address
+            }
+            block(error)
+        }
     }
 }
 
