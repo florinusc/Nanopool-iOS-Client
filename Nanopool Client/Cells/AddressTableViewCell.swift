@@ -8,4 +8,12 @@
 
 import UIKit
 
-class AddressTableViewCell: UITableViewCell {}
+class AddressTableViewCell: UITableViewCell {
+    @IBOutlet private weak var coinImageView: UIImageView!
+    @IBOutlet private weak var addressLabel: UILabel!
+    
+    func configure(with viewModel: AddressCellViewModel) {
+        addressLabel.text = viewModel.address
+        coinImageView.image = UIImage(named: viewModel.imageName)
+    }
+}

@@ -51,6 +51,9 @@
 		9F6391A322E4B027000E1A76 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */; };
 		9F6391A522E580C2000E1A76 /* AddressAddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6391A422E580C2000E1A76 /* AddressAddView.xib */; };
 		9F6391A722E580D4000E1A76 /* AddressAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6391A622E580D4000E1A76 /* AddressAddView.swift */; };
+		9F7F9BF0236220E20017E9E8 /* AddressDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F9BEF236220E20017E9E8 /* AddressDataStore.swift */; };
+		9F7F9BF22362251D0017E9E8 /* LocalAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F9BF12362251D0017E9E8 /* LocalAddress.swift */; };
+		9F7F9BF4236227E40017E9E8 /* AddressCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F9BF3236227E40017E9E8 /* AddressCellViewModel.swift */; };
 		9FCF89C1232AC21600F59201 /* CoinToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89C0232AC21600F59201 /* CoinToolBarView.swift */; };
 		9FCF89C3232AC23500F59201 /* CoinToolBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF89C2232AC23500F59201 /* CoinToolBarView.xib */; };
 		9FCF89C6232AC46E00F59201 /* CoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF89C4232AC46E00F59201 /* CoinCollectionViewCell.swift */; };
@@ -128,6 +131,9 @@
 		9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
 		9F6391A422E580C2000E1A76 /* AddressAddView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressAddView.xib; sourceTree = "<group>"; };
 		9F6391A622E580D4000E1A76 /* AddressAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAddView.swift; sourceTree = "<group>"; };
+		9F7F9BEF236220E20017E9E8 /* AddressDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataStore.swift; sourceTree = "<group>"; };
+		9F7F9BF12362251D0017E9E8 /* LocalAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAddress.swift; sourceTree = "<group>"; };
+		9F7F9BF3236227E40017E9E8 /* AddressCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCellViewModel.swift; sourceTree = "<group>"; };
 		9FCF89C0232AC21600F59201 /* CoinToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinToolBarView.swift; sourceTree = "<group>"; };
 		9FCF89C2232AC23500F59201 /* CoinToolBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinToolBarView.xib; sourceTree = "<group>"; };
 		9FCF89C4232AC46E00F59201 /* CoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 				9F6390DC22D9FC44000E1A76 /* PoolInformation.swift */,
 				9FD906CC2339443300BA3B06 /* Coin.swift */,
 				9F456AEA2360B4670037DCBC /* NanoError.swift */,
+				9F7F9BF12362251D0017E9E8 /* LocalAddress.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 				9F6390E522DA01C2000E1A76 /* DashboardCellViewModel.swift */,
 				9F6390C922D9EFCA000E1A76 /* DashboardCell.xib */,
 				9F6391A022E4B027000E1A76 /* AddressTableViewCell.swift */,
+				9F7F9BF3236227E40017E9E8 /* AddressCellViewModel.swift */,
 				9F6391A122E4B027000E1A76 /* AddressTableViewCell.xib */,
 				9FCF89C4232AC46E00F59201 /* CoinCollectionViewCell.swift */,
 				9FD906CA233943D600BA3B06 /* CoinCellViewModel.swift */,
@@ -330,6 +338,7 @@
 				9F6390DE22D9FC73000E1A76 /* Repository.swift */,
 				9F63918822DB6423000E1A76 /* OnlineRepository.swift */,
 				9F6390E022D9FD0E000E1A76 /* MockRepository.swift */,
+				9F7F9BEF236220E20017E9E8 /* AddressDataStore.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -561,10 +570,12 @@
 				9F63919922E442DF000E1A76 /* Formatter+Extension.swift in Sources */,
 				9F6390D022D9F00E000E1A76 /* ReusableView.swift in Sources */,
 				9F6390BE22D9E479000E1A76 /* ViewModel.swift in Sources */,
+				9F7F9BF0236220E20017E9E8 /* AddressDataStore.swift in Sources */,
 				9FCF89CB232AC55100F59201 /* UICollectionViewCell+Extension.swift in Sources */,
 				9F6391A222E4B027000E1A76 /* AddressTableViewCell.swift in Sources */,
 				9F6390CA22D9EFCA000E1A76 /* DashboardCell.swift in Sources */,
 				9F63918C22DC52CE000E1A76 /* CoinPricesResource.swift in Sources */,
+				9F7F9BF22362251D0017E9E8 /* LocalAddress.swift in Sources */,
 				9F6390E322D9FD59000E1A76 /* CustomError.swift in Sources */,
 				9F6390CE22D9EFF8000E1A76 /* NibLoadableView.swift in Sources */,
 				9F6390C222D9E4B5000E1A76 /* Storyboarded.swift in Sources */,
@@ -580,6 +591,7 @@
 				9F456AE9235D90DA0037DCBC /* AddressListViewModel.swift in Sources */,
 				9F6390E122D9FD0E000E1A76 /* MockRepository.swift in Sources */,
 				9F6390D822D9F765000E1A76 /* UIFont+Extension.swift in Sources */,
+				9F7F9BF4236227E40017E9E8 /* AddressCellViewModel.swift in Sources */,
 				9FD906CB233943D600BA3B06 /* CoinCellViewModel.swift in Sources */,
 				9F63919B22E44317000E1A76 /* Int+Extension.swift in Sources */,
 				9F63919F22E4AEDF000E1A76 /* AddressListViewController.swift in Sources */,

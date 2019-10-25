@@ -44,6 +44,7 @@ class AddressListViewController: UIViewController, ViewModelBased {
     private func setup() {
         setupTableView()
         setupAddView()
+        getAddresses()
     }
     
     private func setupTableView() {
@@ -60,15 +61,27 @@ class AddressListViewController: UIViewController, ViewModelBased {
         guard let addView = addView else { return }
         view.addSubview(addView)
     }
+    
+    private func getAddresses() {
+        do {
+            try viewModel.getAddresses()
+            tableView.reloadData()
+        } catch let error {
+            presentAlert(for: error)
+        }
+    }
 }
 
 extension AddressListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel.numberOfLocalAddresses
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AddressTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        if let cellViewModel = viewModel.addressCellViewModel(at: indexPath) {
+            cell.configure(with: cellViewModel)
+        }
         return cell
     }
 }
@@ -76,6 +89,9 @@ extension AddressListViewController: UITableViewDelegate, UITableViewDataSource 
 extension AddressListViewController: AddressAddViewDelegate {
     func toggle(expanded: Bool) {
         shadowView.isHidden = !expanded
+        if !expanded {
+            getAddresses()
+        }
     }
     
     func changeCoin() {}

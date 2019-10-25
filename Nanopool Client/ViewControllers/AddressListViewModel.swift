@@ -18,13 +18,31 @@ class AddressListViewModel: ViewModel {
         return AddressAddViewModel(coins: coins, repository: repository)
     }
     
+    var numberOfLocalAddresses: Int {
+        return addressCellViewModels.count
+    }
+    
     // MARK: - Private variables
     private var coins = [Coin]()
+    private var localAddresses = [LocalAddress]()
+    private var addressCellViewModels: [AddressCellViewModel] {
+        return localAddresses.map { AddressCellViewModel.from($0) }
+    }
     
     // MARK: - Lifecycle
     init(repository: Repository) {
         self.repository = repository
         getCoins()
+    }
+    
+    // MARK: - Public helpers
+    func getAddresses() throws {
+        localAddresses = try AddressDataStore.shared.getAddresses()
+    }
+    
+    func addressCellViewModel(at indexPath: IndexPath) -> AddressCellViewModel? {
+        guard indexPath.row >= 0, indexPath.row < numberOfLocalAddresses else { return nil }
+        return addressCellViewModels[indexPath.row]
     }
     
     // MARK: - Private helpers

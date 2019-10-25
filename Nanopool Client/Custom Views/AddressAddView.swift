@@ -134,7 +134,7 @@ class AddressAddView: UIView, NibLoadableView {
                 self.delegate?.presentAlert(for: error)
                 return
             }
-            self.delegate?.presentAlert(for: nil)
+            self.toggle()
         }
     }
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Coin {
+struct Coin: Codable {
     let id: String
     let name: String
     let image: String

@@ -37,9 +37,15 @@ class AddressAddViewModel {
     }
     
     func validateAddress(address: String, completion block: @escaping (Error?) -> Void) {
-        repository.getGeneralInfo(forCoin: selectedCoin.value.id, andAddress: address) { (error) in
+        repository.getGeneralInfo(forCoin: selectedCoin.value.id, andAddress: address) { [weak self] (error) in
+            guard let self = self else { return }
             if error == nil {
-                // save address
+                let localAddress = LocalAddress(address: address, coin: self.selectedCoin.value)
+                do {
+                    try AddressDataStore.shared.saveAddress(localAddress)
+                } catch let err {
+                    block(err)
+                }
             }
             block(error)
         }
